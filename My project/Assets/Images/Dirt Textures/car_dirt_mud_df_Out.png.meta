@@ -1,0 +1,988 @@
+fileFormatVersion: 2
+guid: 5253e64f8ed94ed41a6b9c85d16499da
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1140319120806557865
+    second: car_dirt_mud_df_Out_0
+  - first:
+      213: -8771732196552267759
+    second: car_dirt_mud_df_Out_1
+  - first:
+      213: 3903319347640832646
+    second: car_dirt_mud_df_Out_2
+  - first:
+      213: 9058094892745571063
+    second: car_dirt_mud_df_Out_3
+  - first:
+      213: 2948356450632289834
+    second: car_dirt_mud_df_Out_4
+  - first:
+      213: -1222993724924322309
+    second: car_dirt_mud_df_Out_5
+  - first:
+      213: 2006797464628002089
+    second: car_dirt_mud_df_Out_6
+  - first:
+      213: -1407583266863062197
+    second: car_dirt_mud_df_Out_7
+  - first:
+      213: 1065859469436888469
+    second: car_dirt_mud_df_Out_8
+  - first:
+      213: -5985526942241610760
+    second: car_dirt_mud_df_Out_9
+  - first:
+      213: 6527475262798502568
+    second: car_dirt_mud_df_Out_10
+  - first:
+      213: -819831711020716460
+    second: car_dirt_mud_df_Out_11
+  - first:
+      213: -6101812295216095747
+    second: car_dirt_mud_df_Out_12
+  - first:
+      213: 2811017464205597883
+    second: car_dirt_mud_df_Out_13
+  - first:
+      213: 2944750207969301735
+    second: car_dirt_mud_df_Out_14
+  - first:
+      213: -4165343599826336019
+    second: car_dirt_mud_df_Out_15
+  - first:
+      213: -1195133309371940043
+    second: car_dirt_mud_df_Out_16
+  - first:
+      213: -9218588730762371580
+    second: car_dirt_mud_df_Out_17
+  - first:
+      213: -2959307046211214864
+    second: car_dirt_mud_df_Out_18
+  - first:
+      213: 3341248504383973496
+    second: car_dirt_mud_df_Out_19
+  - first:
+      213: -3989690313178740285
+    second: car_dirt_mud_df_Out_20
+  - first:
+      213: 3965334740878040235
+    second: car_dirt_mud_df_Out_21
+  - first:
+      213: -7990478804004003438
+    second: car_dirt_mud_df_Out_22
+  - first:
+      213: -1420600639570977836
+    second: car_dirt_mud_df_Out_23
+  - first:
+      213: -664434364858450930
+    second: car_dirt_mud_df_Out_24
+  - first:
+      213: 7488369524408596162
+    second: car_dirt_mud_df_Out_25
+  - first:
+      213: 8184340504105237689
+    second: car_dirt_mud_df_Out_26
+  - first:
+      213: 204827369294589443
+    second: car_dirt_mud_df_Out_27
+  - first:
+      213: 4428088246718179612
+    second: car_dirt_mud_df_Out_28
+  - first:
+      213: 1956041028554003559
+    second: car_dirt_mud_df_Out_29
+  - first:
+      213: 8403238262625427667
+    second: car_dirt_mud_df_Out_30
+  - first:
+      213: -1336345669303747581
+    second: car_dirt_mud_df_Out_31
+  - first:
+      213: 5129233158289857121
+    second: car_dirt_mud_df_Out_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: car_dirt_mud_df_Out_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 624
+        width: 1024
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a8b24ed23a33df00800000000000000
+      internalID: 1140319120806557865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_mud_df_Out_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 618
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11825a7ba0c844680800000000000000
+      internalID: -8771732196552267759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_mud_df_Out_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 312
+        width: 1024
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6829a0914406b2630800000000000000
+      internalID: 3903319347640832646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_mud_df_Out_3
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 620
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fa31e72051d4bd70800000000000000
+      internalID: 9058094892745571063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_mud_df_Out_4
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 614
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2e4b2f129aaae820800000000000000
+      internalID: 2948356450632289834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_mud_df_Out_5
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 628
+        width: 42
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfd9a57dfad070fe0800000000000000
+      internalID: -1222993724924322309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_mud_df_Out_6
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 615
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92d7e4f59a399db10800000000000000
+      internalID: 2006797464628002089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_mud_df_Out_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1024
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b43e7daf972477ce0800000000000000
+      internalID: -1407583266863062197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_mud_df_Out_8
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 305
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 595a5405a81bace00800000000000000
+      internalID: 1065859469436888469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_mud_df_Out_9
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 316
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f3a82e65f22feca0800000000000000
+      internalID: -5985526942241610760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_mud_df_Out_10
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 300
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aa114fda20469a50800000000000000
+      internalID: 6527475262798502568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_mud_df_Out_11
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 310
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45e6209076f5f94f0800000000000000
+      internalID: -819831711020716460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_mud_df_Out_12
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 307
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfd9889db02025ba0800000000000000
+      internalID: -6101812295216095747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_mud_df_Out_13
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 303
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbcd4638d7db20720800000000000000
+      internalID: 2811017464205597883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_mud_df_Out_14
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 305
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e4944256baddd820800000000000000
+      internalID: 2944750207969301735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_mud_df_Out_15
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 307
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de687ec901ab136c0800000000000000
+      internalID: -4165343599826336019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_mud_df_Out_16
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 311
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53306a356980a6fe0800000000000000
+      internalID: -1195133309371940043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_mud_df_Out_17
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 307
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40e5d7c346ef01080800000000000000
+      internalID: -9218588730762371580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_mud_df_Out_18
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 304
+        width: 24
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f12549abed6ee6d0800000000000000
+      internalID: -2959307046211214864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_mud_df_Out_19
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 312
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 878ac12efcf7e5e20800000000000000
+      internalID: 3341248504383973496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_mud_df_Out_20
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 310
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c90a276cc5c1a8c0800000000000000
+      internalID: -3989690313178740285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_mud_df_Out_21
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 302
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bac1d8500f2b70730800000000000000
+      internalID: 3965334740878040235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_mud_df_Out_22
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 297
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 291ad06fcdd1c1190800000000000000
+      internalID: -7990478804004003438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_mud_df_Out_23
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 307
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dbdda6be33094ce0800000000000000
+      internalID: -1420600639570977836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_mud_df_Out_24
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 306
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0cbc0a277477c6f0800000000000000
+      internalID: -664434364858450930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_mud_df_Out_25
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 302
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c63c3948680ce760800000000000000
+      internalID: 7488369524408596162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_mud_df_Out_26
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 308
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bcb804735e949170800000000000000
+      internalID: 8184340504105237689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_mud_df_Out_27
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 308
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30ee41b3861b7d200800000000000000
+      internalID: 204827369294589443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_mud_df_Out_28
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 303
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1928b3accab37d30800000000000000
+      internalID: 4428088246718179612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_mud_df_Out_29
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 302
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7641d01b3f0452b10800000000000000
+      internalID: 1956041028554003559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_mud_df_Out_30
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 309
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d062c67dac4e9470800000000000000
+      internalID: 8403238262625427667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_mud_df_Out_31
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 299
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30cb40ca1b8547de0800000000000000
+      internalID: -1336345669303747581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_mud_df_Out_32
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 302
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16a9502b162be2740800000000000000
+      internalID: 5129233158289857121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      car_dirt_mud_df_Out_0: 1140319120806557865
+      car_dirt_mud_df_Out_1: -8771732196552267759
+      car_dirt_mud_df_Out_10: 6527475262798502568
+      car_dirt_mud_df_Out_11: -819831711020716460
+      car_dirt_mud_df_Out_12: -6101812295216095747
+      car_dirt_mud_df_Out_13: 2811017464205597883
+      car_dirt_mud_df_Out_14: 2944750207969301735
+      car_dirt_mud_df_Out_15: -4165343599826336019
+      car_dirt_mud_df_Out_16: -1195133309371940043
+      car_dirt_mud_df_Out_17: -9218588730762371580
+      car_dirt_mud_df_Out_18: -2959307046211214864
+      car_dirt_mud_df_Out_19: 3341248504383973496
+      car_dirt_mud_df_Out_2: 3903319347640832646
+      car_dirt_mud_df_Out_20: -3989690313178740285
+      car_dirt_mud_df_Out_21: 3965334740878040235
+      car_dirt_mud_df_Out_22: -7990478804004003438
+      car_dirt_mud_df_Out_23: -1420600639570977836
+      car_dirt_mud_df_Out_24: -664434364858450930
+      car_dirt_mud_df_Out_25: 7488369524408596162
+      car_dirt_mud_df_Out_26: 8184340504105237689
+      car_dirt_mud_df_Out_27: 204827369294589443
+      car_dirt_mud_df_Out_28: 4428088246718179612
+      car_dirt_mud_df_Out_29: 1956041028554003559
+      car_dirt_mud_df_Out_3: 9058094892745571063
+      car_dirt_mud_df_Out_30: 8403238262625427667
+      car_dirt_mud_df_Out_31: -1336345669303747581
+      car_dirt_mud_df_Out_32: 5129233158289857121
+      car_dirt_mud_df_Out_4: 2948356450632289834
+      car_dirt_mud_df_Out_5: -1222993724924322309
+      car_dirt_mud_df_Out_6: 2006797464628002089
+      car_dirt_mud_df_Out_7: -1407583266863062197
+      car_dirt_mud_df_Out_8: 1065859469436888469
+      car_dirt_mud_df_Out_9: -5985526942241610760
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

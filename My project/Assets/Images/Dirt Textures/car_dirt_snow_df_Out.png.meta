@@ -1,0 +1,2652 @@
+fileFormatVersion: 2
+guid: 9c8001389eb653746a1e8a68eca1bc0d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2165092547033492427
+    second: car_dirt_snow_df_Out_0
+  - first:
+      213: 1848240234543683401
+    second: car_dirt_snow_df_Out_1
+  - first:
+      213: 8207585196441759605
+    second: car_dirt_snow_df_Out_2
+  - first:
+      213: 332557820931206449
+    second: car_dirt_snow_df_Out_3
+  - first:
+      213: -4137906984879842702
+    second: car_dirt_snow_df_Out_4
+  - first:
+      213: 4471898175517078483
+    second: car_dirt_snow_df_Out_5
+  - first:
+      213: 7649430005789682585
+    second: car_dirt_snow_df_Out_6
+  - first:
+      213: 3253043613041848261
+    second: car_dirt_snow_df_Out_7
+  - first:
+      213: -8926570083697615396
+    second: car_dirt_snow_df_Out_8
+  - first:
+      213: 2201091169252811697
+    second: car_dirt_snow_df_Out_9
+  - first:
+      213: -5796041722579273172
+    second: car_dirt_snow_df_Out_10
+  - first:
+      213: 1576909483095908556
+    second: car_dirt_snow_df_Out_11
+  - first:
+      213: -2990217666480409275
+    second: car_dirt_snow_df_Out_12
+  - first:
+      213: -7560509531955415544
+    second: car_dirt_snow_df_Out_13
+  - first:
+      213: -1847320477119365606
+    second: car_dirt_snow_df_Out_14
+  - first:
+      213: 3804379414081083235
+    second: car_dirt_snow_df_Out_15
+  - first:
+      213: 4820110623332858795
+    second: car_dirt_snow_df_Out_16
+  - first:
+      213: -7418601155118343388
+    second: car_dirt_snow_df_Out_17
+  - first:
+      213: -5223711543469226688
+    second: car_dirt_snow_df_Out_18
+  - first:
+      213: -4674206487178697465
+    second: car_dirt_snow_df_Out_19
+  - first:
+      213: -3779292330871367249
+    second: car_dirt_snow_df_Out_20
+  - first:
+      213: 2244840605355427627
+    second: car_dirt_snow_df_Out_21
+  - first:
+      213: 3559484201472417894
+    second: car_dirt_snow_df_Out_22
+  - first:
+      213: -7083421304178204488
+    second: car_dirt_snow_df_Out_23
+  - first:
+      213: 7528656553839409374
+    second: car_dirt_snow_df_Out_24
+  - first:
+      213: 2247960941885085553
+    second: car_dirt_snow_df_Out_25
+  - first:
+      213: -1492273769046381132
+    second: car_dirt_snow_df_Out_26
+  - first:
+      213: -1482659370860575653
+    second: car_dirt_snow_df_Out_27
+  - first:
+      213: -1328749505482167879
+    second: car_dirt_snow_df_Out_28
+  - first:
+      213: 2739875664350390496
+    second: car_dirt_snow_df_Out_29
+  - first:
+      213: 6112288344334053759
+    second: car_dirt_snow_df_Out_30
+  - first:
+      213: 5013960850297432286
+    second: car_dirt_snow_df_Out_31
+  - first:
+      213: -5443672046858738571
+    second: car_dirt_snow_df_Out_32
+  - first:
+      213: -6010993481865836011
+    second: car_dirt_snow_df_Out_33
+  - first:
+      213: 5993253478972226309
+    second: car_dirt_snow_df_Out_34
+  - first:
+      213: 9188889676660577393
+    second: car_dirt_snow_df_Out_35
+  - first:
+      213: 1507040550346156181
+    second: car_dirt_snow_df_Out_36
+  - first:
+      213: -2807084062250517037
+    second: car_dirt_snow_df_Out_37
+  - first:
+      213: 7152991396043039882
+    second: car_dirt_snow_df_Out_38
+  - first:
+      213: 2374788137935653759
+    second: car_dirt_snow_df_Out_39
+  - first:
+      213: -6548376676285913853
+    second: car_dirt_snow_df_Out_40
+  - first:
+      213: -2139337456398898886
+    second: car_dirt_snow_df_Out_41
+  - first:
+      213: 3817168673605904600
+    second: car_dirt_snow_df_Out_42
+  - first:
+      213: -6440448023483169376
+    second: car_dirt_snow_df_Out_43
+  - first:
+      213: -8322594724695553569
+    second: car_dirt_snow_df_Out_44
+  - first:
+      213: -7408736144382988637
+    second: car_dirt_snow_df_Out_45
+  - first:
+      213: -7090793152473694179
+    second: car_dirt_snow_df_Out_46
+  - first:
+      213: 2162426418628014334
+    second: car_dirt_snow_df_Out_47
+  - first:
+      213: -6578807091634403255
+    second: car_dirt_snow_df_Out_48
+  - first:
+      213: -7866225997747656518
+    second: car_dirt_snow_df_Out_49
+  - first:
+      213: 6283268948375789056
+    second: car_dirt_snow_df_Out_50
+  - first:
+      213: -5756654247899738292
+    second: car_dirt_snow_df_Out_51
+  - first:
+      213: 7780174903417949924
+    second: car_dirt_snow_df_Out_52
+  - first:
+      213: -8432935330398129625
+    second: car_dirt_snow_df_Out_53
+  - first:
+      213: -2390065236650511136
+    second: car_dirt_snow_df_Out_54
+  - first:
+      213: -9117967457497036026
+    second: car_dirt_snow_df_Out_55
+  - first:
+      213: 366629940251290262
+    second: car_dirt_snow_df_Out_56
+  - first:
+      213: 1327740694854849662
+    second: car_dirt_snow_df_Out_57
+  - first:
+      213: 5101872137626474279
+    second: car_dirt_snow_df_Out_58
+  - first:
+      213: 4525671929908854859
+    second: car_dirt_snow_df_Out_59
+  - first:
+      213: -5712132732444091327
+    second: car_dirt_snow_df_Out_60
+  - first:
+      213: -6431873235991193506
+    second: car_dirt_snow_df_Out_61
+  - first:
+      213: -2795501792790985451
+    second: car_dirt_snow_df_Out_62
+  - first:
+      213: 2945802608701163079
+    second: car_dirt_snow_df_Out_63
+  - first:
+      213: 6063949798256727664
+    second: car_dirt_snow_df_Out_64
+  - first:
+      213: -4744844340034996577
+    second: car_dirt_snow_df_Out_65
+  - first:
+      213: 7414467025499269687
+    second: car_dirt_snow_df_Out_66
+  - first:
+      213: -9170227280823585505
+    second: car_dirt_snow_df_Out_67
+  - first:
+      213: 4922684072273234933
+    second: car_dirt_snow_df_Out_68
+  - first:
+      213: -6835372238034203930
+    second: car_dirt_snow_df_Out_69
+  - first:
+      213: 8061336821803825666
+    second: car_dirt_snow_df_Out_70
+  - first:
+      213: 4795939397803343741
+    second: car_dirt_snow_df_Out_71
+  - first:
+      213: 6445500649438403634
+    second: car_dirt_snow_df_Out_72
+  - first:
+      213: 2717905481648012616
+    second: car_dirt_snow_df_Out_73
+  - first:
+      213: 4693785686952123151
+    second: car_dirt_snow_df_Out_74
+  - first:
+      213: -2806173614227672392
+    second: car_dirt_snow_df_Out_75
+  - first:
+      213: -2716462258328811162
+    second: car_dirt_snow_df_Out_76
+  - first:
+      213: -604076903570899772
+    second: car_dirt_snow_df_Out_77
+  - first:
+      213: -4065501306221041776
+    second: car_dirt_snow_df_Out_78
+  - first:
+      213: -8062896708648750567
+    second: car_dirt_snow_df_Out_79
+  - first:
+      213: 7404670353436039858
+    second: car_dirt_snow_df_Out_80
+  - first:
+      213: 2908592918784335218
+    second: car_dirt_snow_df_Out_81
+  - first:
+      213: -4041101056137121164
+    second: car_dirt_snow_df_Out_82
+  - first:
+      213: 9049911219393435326
+    second: car_dirt_snow_df_Out_83
+  - first:
+      213: -1068755882511764588
+    second: car_dirt_snow_df_Out_84
+  - first:
+      213: 871362877662204010
+    second: car_dirt_snow_df_Out_85
+  - first:
+      213: 5962446208123031248
+    second: car_dirt_snow_df_Out_86
+  - first:
+      213: -4230013884750123782
+    second: car_dirt_snow_df_Out_87
+  - first:
+      213: 2947438611797701780
+    second: car_dirt_snow_df_Out_88
+  - first:
+      213: -7258987187762496011
+    second: car_dirt_snow_df_Out_89
+  - first:
+      213: -3394726462040079216
+    second: car_dirt_snow_df_Out_90
+  - first:
+      213: -3438538662830609978
+    second: car_dirt_snow_df_Out_91
+  - first:
+      213: 7637141231420470019
+    second: car_dirt_snow_df_Out_92
+  - first:
+      213: 7820968194014138911
+    second: car_dirt_snow_df_Out_93
+  - first:
+      213: 7217151707885544736
+    second: car_dirt_snow_df_Out_94
+  - first:
+      213: -8536107889307376732
+    second: car_dirt_snow_df_Out_95
+  - first:
+      213: 3002808987662387713
+    second: car_dirt_snow_df_Out_96
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 622
+        width: 492
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcbe6cb4334fb0e10800000000000000
+      internalID: 2165092547033492427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_1
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1008
+        width: 48
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9479f8f63b446a910800000000000000
+      internalID: 1848240234543683401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_2
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 1017
+        width: 17
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57f6aa1204337e170800000000000000
+      internalID: 8207585196441759605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_3
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 632
+        width: 554
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13de1ef739b7d9400800000000000000
+      internalID: 332557820931206449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_4
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 838
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27a11a455833396c0800000000000000
+      internalID: -4137906984879842702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_5
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 725
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d3b96f82bf5f0e30800000000000000
+      internalID: 4471898175517078483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_6
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 691
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99bee45df0c382a60800000000000000
+      internalID: 7649430005789682585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_7
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 643
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cf66324ee1252d20800000000000000
+      internalID: 3253043613041848261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_8
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 632
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdd139acdc37e1480800000000000000
+      internalID: -8926570083697615396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_9
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 645
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b3209da1c8db8e10800000000000000
+      internalID: 2201091169252811697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_10
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 644
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2ab15613c2509fa0800000000000000
+      internalID: -5796041722579273172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_11
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 643
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc060eee1de42e510800000000000000
+      internalID: 1576909483095908556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_12
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 632
+        width: 84
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 545765c00ec9086d0800000000000000
+      internalID: -2990217666480409275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_13
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 649
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 806b7d253aca31790800000000000000
+      internalID: -7560509531955415544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_14
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 641
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1ebef640dffc56e0800000000000000
+      internalID: -1847320477119365606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_15
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 638
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3679c1fabeedbc430800000000000000
+      internalID: 3804379414081083235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_16
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 649
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bab77d9e21974e240800000000000000
+      internalID: 4820110623332858795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_17
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 632
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42b5eda0e85db0990800000000000000
+      internalID: -7418601155118343388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_18
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 651
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 045c8621706a187b0800000000000000
+      internalID: -5223711543469226688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_19
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 648
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70523e407f1e12fb0800000000000000
+      internalID: -4674206487178697465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_20
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 643
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa9dd0c06a14d8bc0800000000000000
+      internalID: -3779292330871367249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_21
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 637
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b27459b03a6472f10800000000000000
+      internalID: 2244840605355427627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_22
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 637
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 660e064b504d56130800000000000000
+      internalID: 3559484201472417894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_23
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 632
+        width: 10
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b0260a7ad1a2bd90800000000000000
+      internalID: -7083421304178204488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_24
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 636
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed8b3874f392b7860800000000000000
+      internalID: 7528656553839409374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_25
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 630
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1775302019c523f10800000000000000
+      internalID: 2247960941885085553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_26
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 641
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bd6b58d9e06a4be0800000000000000
+      internalID: -1492273769046381132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_27
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 640
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5483fc58298c6be0800000000000000
+      internalID: -1482659370860575653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_28
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 632
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b962426d555f8de0800000000000000
+      internalID: -1328749505482167879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_29
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 641
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e8a756766ef50620800000000000000
+      internalID: 2739875664350390496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_30
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 637
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f71bac86dd533d450800000000000000
+      internalID: 6112288344334053759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_31
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 637
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed8a1b704da259540800000000000000
+      internalID: 5013960850297432286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_32
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 632
+        width: 34
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 574e24d7d113474b0800000000000000
+      internalID: -5443672046858738571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_33
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 634
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51ac23e9649a49ca0800000000000000
+      internalID: -6010993481865836011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_34
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 641
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50b730719405c2350800000000000000
+      internalID: 5993253478972226309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_35
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 632
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1749b91e97e758f70800000000000000
+      internalID: 9188889676660577393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_36
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 636
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 598ed7955651ae410800000000000000
+      internalID: 1507040550346156181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_37
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 639
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ddb5eefaeb3b09d0800000000000000
+      internalID: -2807084062250517037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_38
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 632
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a84229ac6c7844360800000000000000
+      internalID: 7152991396043039882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_39
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 632
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7b4772ba31f4f020800000000000000
+      internalID: 2374788137935653759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_40
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 639
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30566829b1e7f15a0800000000000000
+      internalID: -6548376676285913853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_41
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 632
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a39e7a80beb8f42e0800000000000000
+      internalID: -2139337456398898886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_42
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 639
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d867063fae49f430800000000000000
+      internalID: 3817168673605904600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_43
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 632
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a54be545aeee96a0800000000000000
+      internalID: -6440448023483169376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_44
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 632
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd94bf06134308c80800000000000000
+      internalID: -8322594724695553569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_45
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 632
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ae6477dab1ee2990800000000000000
+      internalID: -7408736144382988637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_46
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 632
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d10880b4231789d90800000000000000
+      internalID: -7090793152473694179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_47
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 632
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef03e37ee5b720e10800000000000000
+      internalID: 2162426418628014334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 299
+        width: 1024
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9488f416ec163b4a0800000000000000
+      internalID: -6578807091634403255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_49
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 620
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab8ee41d12d85d290800000000000000
+      internalID: -7866225997747656518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_50
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 622
+        width: 17
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00e5e2081d7a23750800000000000000
+      internalID: 6283268948375789056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_51
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 615
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4f413b26714c10b0800000000000000
+      internalID: -5756654247899738292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 583
+        width: 8
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eec2a08adbb8fb60800000000000000
+      internalID: 7780174903417949924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_53
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 608
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72237c12ff138fa80800000000000000
+      internalID: -8432935330398129625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_54
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 613
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e4bf639458c4ded0800000000000000
+      internalID: -2390065236650511136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_55
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 611
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60b415e08e8767180800000000000000
+      internalID: -9117967457497036026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_56
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 612
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69a63b8fcf7861500800000000000000
+      internalID: 366629940251290262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_57
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 607
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7457a690251d6210800000000000000
+      internalID: 1327740694854849662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_58
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 598
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72750b4adad7dc640800000000000000
+      internalID: 5101872137626474279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_59
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 608
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b408c2864aa6ece30800000000000000
+      internalID: 4525671929908854859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_60
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 610
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14cd9c44b8d6ab0b0800000000000000
+      internalID: -5712132732444091327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_61
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 603
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5817609e556db6a0800000000000000
+      internalID: -6431873235991193506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_62
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 292
+        width: 21
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 515c9bf3ee16439d0800000000000000
+      internalID: -2795501792790985451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_63
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 300
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7464d067dd791e820800000000000000
+      internalID: 2945802608701163079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_64
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 306
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 076d4ec963a772450800000000000000
+      internalID: 6063949798256727664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_65
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 304
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f96f0b5463de62eb0800000000000000
+      internalID: -4744844340034996577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_66
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 303
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73a2bb5e97a75e660800000000000000
+      internalID: 7414467025499269687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_67
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 310
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f15f9e0cfdeccb080800000000000000
+      internalID: -9170227280823585505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_68
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 305
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fbc15d0513e05440800000000000000
+      internalID: 4922684072273234933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_69
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 303
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ea87643a21e321a0800000000000000
+      internalID: -6835372238034203930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_70
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 303
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20ab46ee02f9fdf60800000000000000
+      internalID: 8061336821803825666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_71
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 306
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7f7e5ae8799e8240800000000000000
+      internalID: 4795939397803343741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_72
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 305
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23c5351e0b4037950800000000000000
+      internalID: 6445500649438403634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_73
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 301
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84d77bea2a0f7b520800000000000000
+      internalID: 2717905481648012616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_74
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 305
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0b189aa63da32140800000000000000
+      internalID: 4693785686952123151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_75
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1024
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b2b2e137f77e09d0800000000000000
+      internalID: -2806173614227672392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_76
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 303
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6694e8ee7ff2d4ad0800000000000000
+      internalID: -2716462258328811162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_77
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 299
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cc73a9b143ed97f0800000000000000
+      internalID: -604076903570899772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_78
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 298
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 097eec81a107497c0800000000000000
+      internalID: -4065501306221041776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_79
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 300
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 912335c9926da1090800000000000000
+      internalID: -8062896708648750567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_80
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 297
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2badb6f647ca2c660800000000000000
+      internalID: 7404670353436039858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_81
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 297
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27d5b5869d56d5820800000000000000
+      internalID: 2908592918784335218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_82
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 299
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 472bd7700002be7c0800000000000000
+      internalID: -4041101056137121164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_83
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 294
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb694c83e4eb79d70800000000000000
+      internalID: 9049911219393435326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_84
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 300
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 493f647ff240b21f0800000000000000
+      internalID: -1068755882511764588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_85
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 289
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a609489abe3b71c00800000000000000
+      internalID: 871362877662204010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_86
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 289
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0de4c836c3ddeb250800000000000000
+      internalID: 5962446208123031248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_87
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 303
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afcaf7c88c8fb45c0800000000000000
+      internalID: -4230013884750123782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_88
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 297
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 494f87d1dc767e820800000000000000
+      internalID: 2947438611797701780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_89
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 295
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fdfd4ccc95e24b90800000000000000
+      internalID: -7258987187762496011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_90
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 297
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0948b70d44283e0d0800000000000000
+      internalID: -3394726462040079216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_91
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 298
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c9e887ed4bd740d0800000000000000
+      internalID: -3438538662830609978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_92
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 299
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3037e469c739cf960800000000000000
+      internalID: 7637141231420470019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_93
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 292
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1257db9229a98c60800000000000000
+      internalID: 7820968194014138911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_94
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 299
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0252f9e7d39782460800000000000000
+      internalID: 7217151707885544736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_95
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 296
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a3ac65d917a98980800000000000000
+      internalID: -8536107889307376732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: car_dirt_snow_df_Out_96
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 291
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10a87fd5dde1ca920800000000000000
+      internalID: 3002808987662387713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      car_dirt_snow_df_Out_0: 2165092547033492427
+      car_dirt_snow_df_Out_1: 1848240234543683401
+      car_dirt_snow_df_Out_10: -5796041722579273172
+      car_dirt_snow_df_Out_11: 1576909483095908556
+      car_dirt_snow_df_Out_12: -2990217666480409275
+      car_dirt_snow_df_Out_13: -7560509531955415544
+      car_dirt_snow_df_Out_14: -1847320477119365606
+      car_dirt_snow_df_Out_15: 3804379414081083235
+      car_dirt_snow_df_Out_16: 4820110623332858795
+      car_dirt_snow_df_Out_17: -7418601155118343388
+      car_dirt_snow_df_Out_18: -5223711543469226688
+      car_dirt_snow_df_Out_19: -4674206487178697465
+      car_dirt_snow_df_Out_2: 8207585196441759605
+      car_dirt_snow_df_Out_20: -3779292330871367249
+      car_dirt_snow_df_Out_21: 2244840605355427627
+      car_dirt_snow_df_Out_22: 3559484201472417894
+      car_dirt_snow_df_Out_23: -7083421304178204488
+      car_dirt_snow_df_Out_24: 7528656553839409374
+      car_dirt_snow_df_Out_25: 2247960941885085553
+      car_dirt_snow_df_Out_26: -1492273769046381132
+      car_dirt_snow_df_Out_27: -1482659370860575653
+      car_dirt_snow_df_Out_28: -1328749505482167879
+      car_dirt_snow_df_Out_29: 2739875664350390496
+      car_dirt_snow_df_Out_3: 332557820931206449
+      car_dirt_snow_df_Out_30: 6112288344334053759
+      car_dirt_snow_df_Out_31: 5013960850297432286
+      car_dirt_snow_df_Out_32: -5443672046858738571
+      car_dirt_snow_df_Out_33: -6010993481865836011
+      car_dirt_snow_df_Out_34: 5993253478972226309
+      car_dirt_snow_df_Out_35: 9188889676660577393
+      car_dirt_snow_df_Out_36: 1507040550346156181
+      car_dirt_snow_df_Out_37: -2807084062250517037
+      car_dirt_snow_df_Out_38: 7152991396043039882
+      car_dirt_snow_df_Out_39: 2374788137935653759
+      car_dirt_snow_df_Out_4: -4137906984879842702
+      car_dirt_snow_df_Out_40: -6548376676285913853
+      car_dirt_snow_df_Out_41: -2139337456398898886
+      car_dirt_snow_df_Out_42: 3817168673605904600
+      car_dirt_snow_df_Out_43: -6440448023483169376
+      car_dirt_snow_df_Out_44: -8322594724695553569
+      car_dirt_snow_df_Out_45: -7408736144382988637
+      car_dirt_snow_df_Out_46: -7090793152473694179
+      car_dirt_snow_df_Out_47: 2162426418628014334
+      car_dirt_snow_df_Out_48: -6578807091634403255
+      car_dirt_snow_df_Out_49: -7866225997747656518
+      car_dirt_snow_df_Out_5: 4471898175517078483
+      car_dirt_snow_df_Out_50: 6283268948375789056
+      car_dirt_snow_df_Out_51: -5756654247899738292
+      car_dirt_snow_df_Out_52: 7780174903417949924
+      car_dirt_snow_df_Out_53: -8432935330398129625
+      car_dirt_snow_df_Out_54: -2390065236650511136
+      car_dirt_snow_df_Out_55: -9117967457497036026
+      car_dirt_snow_df_Out_56: 366629940251290262
+      car_dirt_snow_df_Out_57: 1327740694854849662
+      car_dirt_snow_df_Out_58: 5101872137626474279
+      car_dirt_snow_df_Out_59: 4525671929908854859
+      car_dirt_snow_df_Out_6: 7649430005789682585
+      car_dirt_snow_df_Out_60: -5712132732444091327
+      car_dirt_snow_df_Out_61: -6431873235991193506
+      car_dirt_snow_df_Out_62: -2795501792790985451
+      car_dirt_snow_df_Out_63: 2945802608701163079
+      car_dirt_snow_df_Out_64: 6063949798256727664
+      car_dirt_snow_df_Out_65: -4744844340034996577
+      car_dirt_snow_df_Out_66: 7414467025499269687
+      car_dirt_snow_df_Out_67: -9170227280823585505
+      car_dirt_snow_df_Out_68: 4922684072273234933
+      car_dirt_snow_df_Out_69: -6835372238034203930
+      car_dirt_snow_df_Out_7: 3253043613041848261
+      car_dirt_snow_df_Out_70: 8061336821803825666
+      car_dirt_snow_df_Out_71: 4795939397803343741
+      car_dirt_snow_df_Out_72: 6445500649438403634
+      car_dirt_snow_df_Out_73: 2717905481648012616
+      car_dirt_snow_df_Out_74: 4693785686952123151
+      car_dirt_snow_df_Out_75: -2806173614227672392
+      car_dirt_snow_df_Out_76: -2716462258328811162
+      car_dirt_snow_df_Out_77: -604076903570899772
+      car_dirt_snow_df_Out_78: -4065501306221041776
+      car_dirt_snow_df_Out_79: -8062896708648750567
+      car_dirt_snow_df_Out_8: -8926570083697615396
+      car_dirt_snow_df_Out_80: 7404670353436039858
+      car_dirt_snow_df_Out_81: 2908592918784335218
+      car_dirt_snow_df_Out_82: -4041101056137121164
+      car_dirt_snow_df_Out_83: 9049911219393435326
+      car_dirt_snow_df_Out_84: -1068755882511764588
+      car_dirt_snow_df_Out_85: 871362877662204010
+      car_dirt_snow_df_Out_86: 5962446208123031248
+      car_dirt_snow_df_Out_87: -4230013884750123782
+      car_dirt_snow_df_Out_88: 2947438611797701780
+      car_dirt_snow_df_Out_89: -7258987187762496011
+      car_dirt_snow_df_Out_9: 2201091169252811697
+      car_dirt_snow_df_Out_90: -3394726462040079216
+      car_dirt_snow_df_Out_91: -3438538662830609978
+      car_dirt_snow_df_Out_92: 7637141231420470019
+      car_dirt_snow_df_Out_93: 7820968194014138911
+      car_dirt_snow_df_Out_94: 7217151707885544736
+      car_dirt_snow_df_Out_95: -8536107889307376732
+      car_dirt_snow_df_Out_96: 3002808987662387713
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
