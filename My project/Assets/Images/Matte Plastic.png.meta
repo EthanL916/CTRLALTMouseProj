@@ -113,23 +113,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlayStation 3 - LittleBigPlanet 2 - Rubber - Matte Plastic_0
+      name: Matte Plastic_Diffuse
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1084
-        height: 552
+        x: 20
+        y: 20
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7a5c39ab9bbb73100800000000000000
-      internalID: 87745124130604455
+      spriteID: 82a06c21d1c6d7d469cbc2fc6e7d826f
+      internalID: 1670004029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Matte Plastic_Specular
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 21
+        width: 510
+        height: 510
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6742030d89d417a4cb43809bc6bd2bba
+      internalID: -408039418
       vertices: []
       indices: 
       edges: []
@@ -138,7 +160,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: e038e8c435148ea41b3edae9842fefa8
     internalID: 0
     vertices: []
     indices: 
@@ -146,9 +168,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":1.0},"gridSpriteSize":{"x":542.0,"y":552.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      PlayStation 3 - LittleBigPlanet 2 - Rubber - Matte Plastic_0: 87745124130604455
+      Matte Plastic_Diffuse: 1670004029
+      Matte Plastic_Specular: -408039418
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

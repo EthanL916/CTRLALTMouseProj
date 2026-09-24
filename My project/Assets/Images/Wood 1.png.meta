@@ -113,23 +113,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlayStation 3 - LittleBigPlanet - Basic Materials - Basic Wood_0
+      name: Wood 1_Diffuse
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1084
-        height: 552
+        x: 20
+        y: 20
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a0ca09385817733b0800000000000000
-      internalID: -5532828798949479414
+      spriteID: 7bc2a7a53e6a72140af419720956fedc
+      internalID: -369930984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood 1_Diffuse1
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 21
+        width: 512
+        height: 510
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ae50ddc4501a9540b217df379981ed4
+      internalID: 1479960423
       vertices: []
       indices: 
       edges: []
@@ -138,7 +160,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c39e4839214d2aa4f8ed1a199faa5901
     internalID: 0
     vertices: []
     indices: 
@@ -146,9 +168,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":1.0},"gridSpriteSize":{"x":542.0,"y":552.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      PlayStation 3 - LittleBigPlanet - Basic Materials - Basic Wood_0: -5532828798949479414
+      Wood 1_Diffuse: -369930984
+      Wood 1_Diffuse1: 1479960423
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -24,7 +24,7 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 0
+  isReadable: 1
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -113,23 +113,71 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlayStation 3 - LittleBigPlanet - Metal - Brushed Steel_0
+      name: Brushed Steel_Diffuse
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 828
-        height: 552
+        x: 83
+        y: 403
+        width: 127
+        height: 126
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 63.5, y: 63}
+        - {x: -63.5, y: 63}
+        - {x: -63.5, y: -63}
+        - {x: 63.5, y: -63}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad6f190f96d757844b137287af55ed3c
+      internalID: 1612290805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brushed Steel_Specular
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 129
+        width: 254
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ec6ceab033f168aa0800000000000000
-      internalID: -6159201136282777906
+      spriteID: 0b3d2454260165e4da7d19cea96bc176
+      internalID: 373764097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brushed Steel_Normal
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 21
+        width: 511
+        height: 510
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1320c03a4c8db254990a3d420cb13bc6
+      internalID: 287622625
       vertices: []
       indices: 
       edges: []
@@ -138,17 +186,27 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5a13f744a21f70741983bf6ff9f7b21e
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
-    secondaryTextures: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: 7d3fe16cf1ce0cb4bbb37988582cfe7d, type: 3}
+      name: Diffuse
+    - texture: {fileID: 2800000, guid: 3221d801d55e3d84582723dc02a86036, type: 3}
+      name: Specular
+    - texture: {fileID: 2800000, guid: fe74f5521e87c2b4da80c513fdc8eda0, type: 3}
+      name: Normal
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":1.0},"gridSpriteSize":{"x":276.0,"y":552.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      PlayStation 3 - LittleBigPlanet - Metal - Brushed Steel_0: -6159201136282777906
+      Brushed Steel_Diffuse: 1612290805
+      Brushed Steel_Normal: 287622625
+      Brushed Steel_Specular: 373764097
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

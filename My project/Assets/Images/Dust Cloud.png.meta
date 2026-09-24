@@ -113,23 +113,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlayStation Vita - LittleBigPlanet PS Vita - Effects - Dust Cloud_0
+      name: Dust Cloud_Diffuse1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 848
-        height: 296
+        x: 21
+        y: 21
+        width: 254
+        height: 254
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2ad059ec2c7b14220800000000000000
-      internalID: 2468456118093155746
+      spriteID: 782ad5802b30e42459c93af3ae49674a
+      internalID: -487782870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dust Cloud_Diffuse2
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 20
+        width: 255
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0483e59497036d1489e84a2fc4444b64
+      internalID: 1516935445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dust Cloud_Opacity
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 20
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 137d3545a6d65ac4987984ce58a6b7b2
+      internalID: -450892865
       vertices: []
       indices: 
       edges: []
@@ -138,7 +182,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 739090fa8676f324ba93c1cfa4a514da
     internalID: 0
     vertices: []
     indices: 
@@ -146,9 +190,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":1.0},"gridSpriteSize":{"x":282.0,"y":296.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      PlayStation Vita - LittleBigPlanet PS Vita - Effects - Dust Cloud_0: 2468456118093155746
+      Dust Cloud_Diffuse1: -487782870
+      Dust Cloud_Diffuse2: 1516935445
+      Dust Cloud_Opacity: -450892865
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

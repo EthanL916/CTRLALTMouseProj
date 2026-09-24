@@ -1,48 +1,57 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
-public class ToolCursorFollower : MonoBehaviour
+public class CleaningHand : MonoBehaviour
 {
-    [SerializeField] private SpriteRenderer spriteRenderer;
+    [Header("Tool Properties")]
+    [SerializeField] private ToolType currentToolType = ToolType.Sponge;
 
-    private void Start()
+    [Header("Cleaning Settings")]
+    [SerializeField] private LayerMask dirtLayer = ~0;
+
+    private Camera mainCamera;
+
+    private void Awake()
     {
-        if (spriteRenderer == null)
-            spriteRenderer = GetComponent<SpriteRenderer>();
-
-        // Ensure System Cursor is hidden
-        Cursor.visible = false;
+        mainCamera = Camera.main;
     }
 
     private void Update()
     {
-        if (Camera.main == null)
+        if (Mouse.current == null) return;
+
+        // Clean continuously while holding left mouse button
+        if (Mouse.current.leftButton.isPressed)
         {
-            Debug.LogError("[ToolCursorFollower] No camera tagged 'MainCamera' found in scene!");
-            return;
+            PerformCleaning();
         }
-
-        // 1. Get raw screen mouse input
-        Vector3 mouseScreenPos = Input.mousePosition;
-
-        // 2. Set depth relative to Camera position (e.g. if Cam is Z=-10, depth is 10)
-        mouseScreenPos.z = Mathf.Abs(Camera.main.transform.position.z);
-
-        // 3. Convert to world coords
-        Vector3 worldPos = Camera.main.ScreenToWorldPoint(mouseScreenPos);
-        worldPos.z = 0f; // Lock Z to 2D plane
-
-        // 4. Force position update
-        transform.position = worldPos;
-
-        // Debug output to Console
-        Debug.Log($"[ToolCursor] Mouse Pos: {Input.mousePosition} | World Pos: {transform.position}");
     }
 
-    public void UpdateToolSprite(Sprite newToolSprite)
+    private void PerformCleaning()
     {
-        if (spriteRenderer != null)
+        Vector2 mouseScreenPos = Mouse.current.position.ReadValue();
+        Vector3 worldPoint = mainCamera.ScreenToWorldPoint(new Vector3(mouseScreenPos.x, mouseScreenPos.y, Mathf.Abs(mainCamera.transform.position.z)));
+        Vector2 originPoint = new Vector2(worldPoint.x, worldPoint.y);
+
+        // Raycast ALL colliders under the mouse point
+        RaycastHit2D[] hits = Physics2D.RaycastAll(originPoint, Vector2.zero, Mathf.Infinity, dirtLayer);
+
+        foreach (RaycastHit2D hit in hits)
         {
-            spriteRenderer.sprite = newToolSprite;
+            if (hit.collider != null)
+            {
+                DirtTile dirtTile = hit.collider.GetComponent<DirtTile>();
+                if (dirtTile != null && dirtTile.gameObject.activeInHierarchy)
+                {
+                    dirtTile.CleanTile(currentToolType);
+                    break; // Cleaned the tile under cursor, done for this frame
+                }
+            }
         }
+    }
+
+    public void SetToolType(ToolType newToolType)
+    {
+        currentToolType = newToolType;
     }
 }

@@ -114,24 +114,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlayStation Vita - LittleBigPlanet PS Vita - Basic Materials - Basic
-        Wood_0
+      name: Wood 2_Diffuse
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 572
-        height: 296
+        x: 20
+        y: 21
+        width: 255
+        height: 254
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f3742ceaed581d7e0800000000000000
-      internalID: -1742464389354469569
+      spriteID: e5f9889bf66a2284eb5a1a48cf6cda66
+      internalID: 68095187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wood 2_Normal
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 21
+        width: 255
+        height: 254
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e24066163cad65449c6edfca8555ad4
+      internalID: -2017986307
       vertices: []
       indices: 
       edges: []
@@ -140,7 +161,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: de9713e9dd2049a47ad7f42d530a969a
     internalID: 0
     vertices: []
     indices: 
@@ -148,9 +169,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":1.0},"gridSpriteSize":{"x":286.0,"y":296.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      PlayStation Vita - LittleBigPlanet PS Vita - Basic Materials - Basic Wood_0: -1742464389354469569
+      Wood 2_Diffuse: 68095187
+      Wood 2_Normal: -2017986307
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
