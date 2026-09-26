@@ -21,10 +21,10 @@ public class ProgressBar : MonoBehaviour
 
     void Start()
     {
-     // if (currentDirtiness <= 0f)
+     /* if (currentDirtiness <= 0f)
         {
-            increaseProgress (0.25f);
-        }
+            IncreaseProgress (0.25f);
+        }*/
     }
 
     
@@ -35,9 +35,9 @@ public class ProgressBar : MonoBehaviour
     }
 
     //adding progress to slider
-    public void increaseProgress(float newProgress)
+    public void IncreaseProgress(float newProgress)
     {
-        setProgress = slider.value + newProgress;
+        setProgress = Mathf.Clamp01(setProgress + newProgress);
     }
 
 }
