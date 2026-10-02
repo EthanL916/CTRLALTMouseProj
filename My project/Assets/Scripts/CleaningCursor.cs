@@ -3,6 +3,9 @@ using UnityEngine.InputSystem;
 
 public class CleaningCursor : MonoBehaviour
 {
+    [Header("Tool Settings")]
+    public ToolType currentTool;
+
     [Header("Tool Visuals")]
     [SerializeField] private SpriteRenderer spriteRenderer;
 
@@ -68,7 +71,6 @@ public class CleaningCursor : MonoBehaviour
             // Check if the overall swipe vector exceeds the threshold
             if (delta.magnitude >= swipeThreshold)
             {
-                // Check if horizontal drag was larger than vertical drag
                 if (Mathf.Abs(delta.x) > Mathf.Abs(delta.y))
                 {
                     // Horizontal Swipes
@@ -98,9 +100,9 @@ public class CleaningCursor : MonoBehaviour
             isSwiping = false;
         }
     }
-
-    public void UpdateCleaningSprite(Sprite newCleaningTool)
+    public void UpdateCleaningSprite(Sprite newCleaningTool, ToolType newTool)
     {
+        currentTool = newTool;
         if (spriteRenderer != null)
         {
             spriteRenderer.sprite = newCleaningTool;

@@ -47,18 +47,18 @@ MonoBehaviour:
   tools:
   - toolName: Sponge
     type: 0
-    toolSprite: {fileID: 0}
+    toolSprite: {fileID: -8030576672439078271, guid: 9777f85ebf1e0d949a3430fbb3f188bd, type: 3}
   - toolName: Rag
     type: 1
-    toolSprite: {fileID: 0}
+    toolSprite: {fileID: 3920257120495934008, guid: 740a8cc89a45442478a9f05097b0def2, type: 3}
   - toolName: Glass Cleaner
     type: 2
-    toolSprite: {fileID: 0}
+    toolSprite: {fileID: -5644809230751511779, guid: f523867b945cad74cb695eaa9a9ef1ef, type: 3}
   - toolName: Duster
     type: 3
-    toolSprite: {fileID: 0}
+    toolSprite: {fileID: 1806098362823331211, guid: 0bf0f5158e22f344080302c7a83a9bfb, type: 3}
   toolFollower: {fileID: 0}
   dirtLayer:
     serializedVersion: 2
     m_Bits: 64
-  cleaningRadius: 0.5
+  cleaningRadius: 0.2

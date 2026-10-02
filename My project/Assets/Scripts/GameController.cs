@@ -101,11 +101,22 @@ public class GameController : MonoBehaviour
     private void ApplyCleaningToolSprite()
     {
         CleaningTool activeTool = tools[currentCleaningTool];
-        toolFollower.UpdateCleaningSprite(activeTool.toolSprite);
+        toolFollower.UpdateCleaningSprite(activeTool.toolSprite, activeTool.type);
     }
 
     private void OnDisable()
     {
         Cursor.visible = true;
+    }
+
+    public void QuitGame()
+    {
+        // Quit standard built standalone application
+        Application.Quit();
+
+        #if UNITY_EDITOR
+        // Stop Play Mode if running inside Unity Editor
+        UnityEditor.EditorApplication.isPlaying = false;
+        #endif
     }
 }

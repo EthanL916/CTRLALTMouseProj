@@ -117,9 +117,9 @@ TextureImporter:
       name: Wood 2_Diffuse
       rect:
         serializedVersion: 2
-        x: 20
+        x: 21
         y: 21
-        width: 255
+        width: 254
         height: 254
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
