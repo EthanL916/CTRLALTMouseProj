@@ -7,9 +7,9 @@ public class DirtTracker : MonoBehaviour
     [Header("UI & Progress")]
     [SerializeField] private ProgressBar progressBar;
 
-    [Header("Victory Screen References")]
+    [Header("Victory Screen & Managers")]
     [SerializeField] private GameObject winScreenPanel;
-    [SerializeField] private GameController gameController;
+    [SerializeField] private GameManager gameManager;
     [SerializeField] private CleaningCursor cleaningCursor;
 
     private float totalLevelDirt = 0f;
@@ -17,35 +17,39 @@ public class DirtTracker : MonoBehaviour
     private bool hasWon = false;
 
     private void Awake()
-{
-    // Fix: Force Instance to point to THIS new active object when the scene reloads
-    Instance = this;
-
-    if (progressBar == null)
     {
-        progressBar = Object.FindFirstObjectByType<ProgressBar>();
+        // Force Instance to point to THIS new active object when the scene reloads
+        Instance = this;
+
+        if (progressBar == null)
+        {
+            progressBar = Object.FindFirstObjectByType<ProgressBar>();
+        }
+
+        if (gameManager == null)
+        {
+            gameManager = Object.FindFirstObjectByType<GameManager>();
+        }
+
+        if (cleaningCursor == null)
+        {
+            cleaningCursor = Object.FindFirstObjectByType<CleaningCursor>();
+        }
     }
 
-    if (gameController == null)
-        gameController = Object.FindFirstObjectByType<GameController>();
-
-    if (cleaningCursor == null)
-        cleaningCursor = Object.FindFirstObjectByType<CleaningCursor>();
-}
-
-private void Start()
-{
-    // Reset runtime tracking variables on scene load
-    hasWon = false;
-    currentProgressFraction = 0f;
-
-    CalculateTotalLevelDirt();
-
-    if (winScreenPanel != null)
+    private void Start()
     {
-        winScreenPanel.SetActive(false);
+        // Reset runtime tracking variables on scene load
+        hasWon = false;
+        currentProgressFraction = 0f;
+
+        CalculateTotalLevelDirt();
+
+        if (winScreenPanel != null)
+        {
+            winScreenPanel.SetActive(false);
+        }
     }
-}
 
     private void CalculateTotalLevelDirt()
     {
@@ -96,7 +100,7 @@ private void Start()
         hasWon = true;
 
         // Lock gameplay controls
-        if (gameController != null) gameController.enabled = false;
+        if (gameManager != null) gameManager.enabled = false;
         if (cleaningCursor != null) cleaningCursor.enabled = false;
 
         // Make standard mouse cursor visible for victory menu interaction

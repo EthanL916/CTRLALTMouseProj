@@ -9,6 +9,14 @@ public class CleaningCursor : MonoBehaviour
     [Header("Tool Visuals")]
     [SerializeField] private SpriteRenderer spriteRenderer;
 
+    [Header("Cursor Speed & Friction")]
+    [Tooltip("How fast the cursor follows the mouse while holding left click to clean (Lower = heavier friction)")]
+    [SerializeField] private float cleaningFollowSpeed = 12f;
+    [Tooltip("If true, the cursor snaps 1:1 with the mouse when NOT cleaning.")]
+    [SerializeField] private bool instantWhenNotCleaning = true;
+    [Tooltip("Follow speed when not cleaning (only used if Instant When Not Cleaning is false)")]
+    [SerializeField] private float normalFollowSpeed = 35f;
+
     [Header("Rotation Settings")]
     [SerializeField] private ObjectRotator objectRotator;
     [Tooltip("Minimum drag distance in pixels to trigger a side flip")]
@@ -45,10 +53,29 @@ public class CleaningCursor : MonoBehaviour
         // Set camera depth offset
         mouseScreenPos.z = Mathf.Abs(Camera.main.transform.position.z);
 
-        Vector3 worldPos = Camera.main.ScreenToWorldPoint(mouseScreenPos);
-        worldPos.z = 0f;
+        Vector3 targetWorldPos = Camera.main.ScreenToWorldPoint(mouseScreenPos);
+        targetWorldPos.z = 0f;
 
-        transform.position = worldPos;
+        // Detect if left click is held down (cleaning state)
+        bool isCleaning = Mouse.current.leftButton.isPressed;
+
+        if (isCleaning)
+        {
+            // Smoothly drag the cursor toward target mouse position (adds friction feel)
+            transform.position = Vector3.Lerp(transform.position, targetWorldPos, cleaningFollowSpeed * Time.deltaTime);
+        }
+        else
+        {
+            if (instantWhenNotCleaning)
+            {
+                // Snap directly to mouse position
+                transform.position = targetWorldPos;
+            }
+            else
+            {
+                transform.position = Vector3.Lerp(transform.position, targetWorldPos, normalFollowSpeed * Time.deltaTime);
+            }
+        }
     }
 
     private void HandleSwipeInput()
@@ -100,6 +127,7 @@ public class CleaningCursor : MonoBehaviour
             isSwiping = false;
         }
     }
+
     public void UpdateCleaningSprite(Sprite newCleaningTool, ToolType newTool)
     {
         currentTool = newTool;

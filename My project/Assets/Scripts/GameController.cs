@@ -1,50 +1,76 @@
-using UnityEngine;
+using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
+using UnityEngine.EventSystems;
 
-public enum ToolType
+public class GameManager : MonoBehaviour
 {
-    Sponge,
-    Rag,
-    GlassCleaner,
-    Duster
-}
+    [Header("Audio Settings")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip buttonClickSound;
 
-[System.Serializable]
-public class CleaningTool
-{
-    public string toolName;
-    public ToolType type;
-    public Sprite toolSprite;
-}
-public class GameController : MonoBehaviour
-{
-    [Header("Tool Inventory")]
-    [SerializeField] private List<CleaningTool> tools = new List<CleaningTool>();
-    private int currentCleaningTool = 0;
+    [Header("UI Panels & Navigation")]
+    [SerializeField] private GameObject startMenuPanel;
+    [SerializeField] private GameObject winScreenPanel;
+    [SerializeField] private GameObject progressBarUI;
+    [SerializeField] private GameObject firstSelectedButton;
 
-    [Header("GameObject Cursor Reference")]
+    [Header("Tool Inventory & Gameplay")]
     [SerializeField] private CleaningCursor toolFollower;
-
-    [Header("Cleaning Settings")]
+    [SerializeField] private List<CleaningTool> tools = new List<CleaningTool>();
     [SerializeField] private LayerMask dirtLayer;
     [SerializeField] private float cleaningRadius = 0.5f;
 
+    private int currentCleaningTool = 0;
     private bool isCleaning = false;
+    private bool isGameActive = false;
 
     private void Start()
     {
-        Cursor.visible = false;
-        if (tools.Count > 0 && toolFollower != null)
+        // Disable gameplay controls until Start Game is clicked
+        isGameActive = false;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+
+        if (startMenuPanel != null) startMenuPanel.SetActive(true);
+        if (progressBarUI != null) progressBarUI.SetActive(false);
+        if (toolFollower != null) toolFollower.enabled = false;
+
+        if (firstSelectedButton != null && EventSystem.current != null)
         {
-            ApplyCleaningToolSprite();
+            EventSystem.current.SetSelectedGameObject(firstSelectedButton);
         }
     }
 
     private void Update()
     {
+        if (!isGameActive) return; // Freeze gameplay inputs while menu is active
+
         CleaningToolSwitching();
         CleaningInput();
+    }
+
+    public void StartGame()
+    {
+        isGameActive = true;
+        
+        if (startMenuPanel != null) startMenuPanel.SetActive(false);
+        if (progressBarUI != null) progressBarUI.SetActive(true);
+        if (toolFollower != null) toolFollower.enabled = true;
+
+        Cursor.visible = false;
+
+        if (tools.Count > 0 && toolFollower != null)
+        {
+            ApplyCleaningToolSprite();
+        }
+
+        if (EventSystem.current != null)
+        {
+            EventSystem.current.SetSelectedGameObject(null);
+        }
     }
 
     private void CleaningToolSwitching()
@@ -52,7 +78,6 @@ public class GameController : MonoBehaviour
         if (isCleaning || Mouse.current == null) return;
 
         float scrollDelta = Mouse.current.scroll.ReadValue().y;
-
         if (scrollDelta > 0f)
         {
             currentCleaningTool = (currentCleaningTool + 1) % tools.Count;
@@ -67,18 +92,9 @@ public class GameController : MonoBehaviour
 
     private void CleaningInput()
     {
-        if (Mouse.current.leftButton.wasPressedThisFrame)
-        {
-            isCleaning = true;
-        }
-        if (Mouse.current.leftButton.isPressed)
-        {
-            PerformCleaning();
-        }
-        if (Mouse.current.leftButton.wasReleasedThisFrame)
-        {
-            isCleaning = false;
-        }
+        if (Mouse.current.leftButton.wasPressedThisFrame) isCleaning = true;
+        if (Mouse.current.leftButton.isPressed) PerformCleaning();
+        if (Mouse.current.leftButton.wasReleasedThisFrame) isCleaning = false;
     }
 
     private void PerformCleaning()
@@ -104,19 +120,39 @@ public class GameController : MonoBehaviour
         toolFollower.UpdateCleaningSprite(activeTool.toolSprite, activeTool.type);
     }
 
-    private void OnDisable()
-    {
-        Cursor.visible = true;
-    }
-
     public void QuitGame()
     {
-        // Quit standard built standalone application
+        StartCoroutine(PlaySoundAndQuit());
+    }
+
+    public void RestartGame()
+    {
+        StartCoroutine(PlaySoundAndRestart());
+    }
+
+    private IEnumerator PlaySoundAndQuit()
+    {
+        if (audioSource != null && buttonClickSound != null)
+        {
+            audioSource.PlayOneShot(buttonClickSound);
+            yield return new WaitForSecondsRealtime(buttonClickSound.length);
+        }
+
         Application.Quit();
 
         #if UNITY_EDITOR
-        // Stop Play Mode if running inside Unity Editor
         UnityEditor.EditorApplication.isPlaying = false;
         #endif
+    }
+
+    private IEnumerator PlaySoundAndRestart()
+    {
+        if (audioSource != null && buttonClickSound != null)
+        {
+            audioSource.PlayOneShot(buttonClickSound);
+            yield return new WaitForSecondsRealtime(buttonClickSound.length);
+        }
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
