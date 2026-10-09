@@ -1,4 +1,5 @@
 using UnityEngine;
+using TMPro; // Required for TextMeshPro UI elements
 
 public class DirtTracker : MonoBehaviour
 {
@@ -6,6 +7,7 @@ public class DirtTracker : MonoBehaviour
 
     [Header("UI & Progress")]
     [SerializeField] private ProgressBar progressBar;
+    [SerializeField] private TextMeshProUGUI winTimeText; // Text element on win screen
 
     [Header("Victory Screen & Managers")]
     [SerializeField] private GameObject winScreenPanel;
@@ -15,6 +17,7 @@ public class DirtTracker : MonoBehaviour
     private float totalLevelDirt = 0f;
     private float currentProgressFraction = 0f; // Tracks total fill from 0.0 to 1.0
     private bool hasWon = false;
+    private float elapsedTime = 0f; // Tracks total play time
 
     private void Awake()
     {
@@ -42,6 +45,7 @@ public class DirtTracker : MonoBehaviour
         // Reset runtime tracking variables on scene load
         hasWon = false;
         currentProgressFraction = 0f;
+        elapsedTime = 0f;
 
         CalculateTotalLevelDirt();
 
@@ -51,18 +55,24 @@ public class DirtTracker : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        // Accumulate elapsed time until the player triggers victory
+        if (!hasWon)
+        {
+            elapsedTime += Time.deltaTime;
+        }
+    }
+
     private void CalculateTotalLevelDirt()
     {
         totalLevelDirt = 0f;
 
-        DirtTile[] allTiles = Resources.FindObjectsOfTypeAll<DirtTile>();
-
+        // Finds active DirtTile components in the scene directly
+        DirtTile[] allTiles = Object.FindObjectsByType<DirtTile>(FindObjectsInactive.Include, FindObjectsSortMode.None);
         foreach (DirtTile tile in allTiles)
         {
-            if (tile.gameObject.scene.isLoaded)
-            {
-                totalLevelDirt += tile.MaxDirtiness;
-            }
+            totalLevelDirt += tile.MaxDirtiness;
         }
     }
 
@@ -98,6 +108,15 @@ public class DirtTracker : MonoBehaviour
     private void TriggerWin()
     {
         hasWon = true;
+
+        // Format elapsed seconds into MM:SS format
+        int minutes = Mathf.FloorToInt(elapsedTime / 60f);
+        int seconds = Mathf.FloorToInt(elapsedTime % 60f);
+
+        if (winTimeText != null)
+        {
+            winTimeText.text = string.Format("Time: {0:00}:{1:00}", minutes, seconds);
+        }
 
         // Lock gameplay controls
         if (gameManager != null) gameManager.enabled = false;

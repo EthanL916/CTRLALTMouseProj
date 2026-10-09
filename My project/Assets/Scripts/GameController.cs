@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
 using UnityEngine.EventSystems;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -23,6 +24,11 @@ public class GameManager : MonoBehaviour
     [SerializeField] private LayerMask dirtLayer;
     [SerializeField] private float cleaningRadius = 0.5f;
     [SerializeField] private float minMovementThreshold = 0.1f; // Minimum distance the tool must move to count as cleaning
+
+    [Header("Timer Settings")]
+    [SerializeField] private TMP_Text timerText;
+    private float elapsedTime = 0f;
+    private bool isTimerRunning = true;
 
     private int currentCleaningTool = 0;
     private bool isCleaning = false;
@@ -51,6 +57,15 @@ public class GameManager : MonoBehaviour
         if (!isGameActive) return; // Freeze gameplay inputs while menu is active
 
         CleaningToolSwitching();
+        CleaningInput();
+
+        if (isTimerRunning)
+        {
+            elapsedTime += Time.deltaTime;
+            UpdateTimerDisplay();
+        }
+
+        // Existing input logic
         CleaningInput();
     }
 
@@ -187,4 +202,28 @@ public class GameManager : MonoBehaviour
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
+    private void UpdateTimerDisplay()
+    {
+        if (timerText == null) return;
+
+        int minutes = Mathf.FloorToInt(elapsedTime / 60f);
+        int seconds = Mathf.FloorToInt(elapsedTime % 60f);
+        int milliseconds = Mathf.FloorToInt((elapsedTime * 100f) % 100f);
+
+        // Formats as "01:23.45"
+        timerText.text = string.Format("{0:00}:{1:00}.{2:00}", minutes, seconds, milliseconds);
+    }
+
+    public void StopTimer()
+    {
+        isTimerRunning = false;
+    }
+
+    public float GetFinalTime()
+    {
+        return elapsedTime;
+    }
+
+
 }
