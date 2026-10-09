@@ -83,7 +83,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 10
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -6578807091634403255, guid: 9c8001389eb653746a1e8a68eca1bc0d, type: 3}
+  m_Sprite: {fileID: -698051581482180575, guid: 7617da1f72a6a4b2790329f6951cd834, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -131,7 +131,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10.24, y: 3.28}
+    oldSize: {x: 3.16, y: 2.92}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -153,8 +153,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DirtTile
   maxDirtiness: 100
   currentDirtiness: 100
+  cleanPopupPrefab: {fileID: 3944288406725599133, guid: 41b9faff1058ac04e811705c46d4f09c, type: 3}
+  spriteRenderer: {fileID: 4173037327395096934}
   requiredTool: 0
-  spriteRenderer: {fileID: 0}
 --- !u!1 &749816517415708363
 GameObject:
   m_ObjectHideFlags: 0
@@ -329,7 +330,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 10
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -6578807091634403255, guid: 9c8001389eb653746a1e8a68eca1bc0d, type: 3}
+  m_Sprite: {fileID: -698051581482180575, guid: 7617da1f72a6a4b2790329f6951cd834, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -377,7 +378,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10.24, y: 3.28}
+    oldSize: {x: 3.16, y: 2.92}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -399,8 +400,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DirtTile
   maxDirtiness: 100
   currentDirtiness: 100
+  cleanPopupPrefab: {fileID: 3944288406725599133, guid: 41b9faff1058ac04e811705c46d4f09c, type: 3}
+  spriteRenderer: {fileID: 4764434734073867268}
   requiredTool: 0
-  spriteRenderer: {fileID: 0}
 --- !u!1 &1438927483478568388
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,8 +519,8 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 10
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2806173614227672392, guid: 9c8001389eb653746a1e8a68eca1bc0d, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: -698051581482180575, guid: 7617da1f72a6a4b2790329f6951cd834, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -541,8 +543,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DirtTile
   maxDirtiness: 100
   currentDirtiness: 100
+  cleanPopupPrefab: {fileID: 3944288406725599133, guid: 41b9faff1058ac04e811705c46d4f09c, type: 3}
+  spriteRenderer: {fileID: 7193767039135505660}
   requiredTool: 0
-  spriteRenderer: {fileID: 0}
 --- !u!61 &1790461125104542515
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -581,7 +584,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10.24, y: 3.03}
+    oldSize: {x: 3.16, y: 2.92}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -672,7 +675,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 10
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -6578807091634403255, guid: 9c8001389eb653746a1e8a68eca1bc0d, type: 3}
+  m_Sprite: {fileID: 5220041768291067147, guid: da189ecb322b8486c9df28d4df888651, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -720,7 +723,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10.24, y: 3.28}
+    oldSize: {x: 3.21, y: 3.3}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -742,8 +745,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DirtTile
   maxDirtiness: 100
   currentDirtiness: 100
+  cleanPopupPrefab: {fileID: 3944288406725599133, guid: 41b9faff1058ac04e811705c46d4f09c, type: 3}
+  spriteRenderer: {fileID: 1064878853606954737}
   requiredTool: 0
-  spriteRenderer: {fileID: 0}
 --- !u!1 &2888805098589379014
 GameObject:
   m_ObjectHideFlags: 0
@@ -804,7 +808,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.77019, y: 0.77019, z: 0.77019}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1744372202289179790}
@@ -1011,8 +1015,8 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 10
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2806173614227672392, guid: 9c8001389eb653746a1e8a68eca1bc0d, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: -698051581482180575, guid: 7617da1f72a6a4b2790329f6951cd834, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1035,8 +1039,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DirtTile
   maxDirtiness: 100
   currentDirtiness: 100
-  requiredTool: 0
+  cleanPopupPrefab: {fileID: 3944288406725599133, guid: 41b9faff1058ac04e811705c46d4f09c, type: 3}
   spriteRenderer: {fileID: 4891869361248006478}
+  requiredTool: 0
 --- !u!61 &7062034574576302472
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1075,7 +1080,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10.24, y: 3.03}
+    oldSize: {x: 3.16, y: 2.92}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1662,8 +1667,8 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 10
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -6578807091634403255, guid: 9c8001389eb653746a1e8a68eca1bc0d, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 5220041768291067147, guid: da189ecb322b8486c9df28d4df888651, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1710,7 +1715,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10.24, y: 3.28}
+    oldSize: {x: 3.21, y: 3.3}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1732,5 +1737,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DirtTile
   maxDirtiness: 100
   currentDirtiness: 100
+  cleanPopupPrefab: {fileID: 3944288406725599133, guid: 41b9faff1058ac04e811705c46d4f09c, type: 3}
+  spriteRenderer: {fileID: 2875506335909032276}
   requiredTool: 0
-  spriteRenderer: {fileID: 0}

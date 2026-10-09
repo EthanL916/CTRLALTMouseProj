@@ -6,13 +6,17 @@ public class DirtTile : MonoBehaviour
     [SerializeField] private float maxDirtiness = 100f;
     [SerializeField] private float currentDirtiness = 100f;
 
-    public float MaxDirtiness => maxDirtiness;
+    [Header("Visual Feedback")]
+    [SerializeField] private GameObject cleanPopupPrefab;
+    [SerializeField] private SpriteRenderer spriteRenderer;
 
     [Header("Tool Compatibility")]
     [Tooltip("Which cleaning tool is effective against this specific dirt spot?")]
     [SerializeField] private ToolType requiredTool = ToolType.Sponge;
-    
-    [SerializeField] private SpriteRenderer spriteRenderer;
+
+    private bool isFullyCleaned = false;
+
+    public float MaxDirtiness => maxDirtiness;
 
     private void Start()
     {
@@ -25,7 +29,8 @@ public class DirtTile : MonoBehaviour
 
     public void CleanTile(ToolType usedTool)
     {
-        if (usedTool != requiredTool || currentDirtiness <= 0f) return;
+        // Guard against wrong tool or already cleaned tile
+        if (isFullyCleaned || usedTool != requiredTool || currentDirtiness <= 0f) return;
 
         float previousDirtiness = currentDirtiness;
 
@@ -37,6 +42,7 @@ public class DirtTile : MonoBehaviour
         // Send cleaned amount to DirtTracker
         DirtTracker.ReportCleaning(cleanedAmount);
 
+        // Fade out dirt opacity as it gets cleaned
         if (spriteRenderer != null)
         {
             Color color = spriteRenderer.color;
@@ -44,8 +50,17 @@ public class DirtTile : MonoBehaviour
             spriteRenderer.color = color;
         }
 
+        // Handle tile completion
         if (currentDirtiness <= 0f)
         {
+            isFullyCleaned = true;
+
+            // Spawn the floating text/icon popup at the tile's location
+            if (cleanPopupPrefab != null)
+            {
+                Instantiate(cleanPopupPrefab, transform.position, Quaternion.identity);
+            }
+
             gameObject.SetActive(false);
         }
     }

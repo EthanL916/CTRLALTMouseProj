@@ -22,10 +22,12 @@ public class GameManager : MonoBehaviour
     [SerializeField] private List<CleaningTool> tools = new List<CleaningTool>();
     [SerializeField] private LayerMask dirtLayer;
     [SerializeField] private float cleaningRadius = 0.5f;
+    [SerializeField] private float minMovementThreshold = 0.1f; // Minimum distance the tool must move to count as cleaning
 
     private int currentCleaningTool = 0;
     private bool isCleaning = false;
     private bool isGameActive = false;
+    private Vector3 lastToolPosition;
 
     private void Start()
     {
@@ -92,9 +94,39 @@ public class GameManager : MonoBehaviour
 
     private void CleaningInput()
     {
-        if (Mouse.current.leftButton.wasPressedThisFrame) isCleaning = true;
-        if (Mouse.current.leftButton.isPressed) PerformCleaning();
-        if (Mouse.current.leftButton.wasReleasedThisFrame) isCleaning = false;
+        if (toolFollower == null || Mouse.current == null) return;
+
+        if (Mouse.current.leftButton.wasPressedThisFrame)
+        {
+            isCleaning = true;
+            // Record initial position when starting a scrub
+            lastToolPosition = toolFollower.transform.position;
+        }
+
+        if (Mouse.current.leftButton.isPressed && isCleaning)
+        {
+            Vector3 currentToolPosition = toolFollower.transform.position;
+            float distanceMoved = Vector3.Distance(currentToolPosition, lastToolPosition);
+
+            // Only clean if the tool is actively moving/scrubbing across the surface
+            if (distanceMoved >= minMovementThreshold)
+            {
+                PerformCleaning();
+                // Reset tracking position to current spot after scrubbing
+                lastToolPosition = currentToolPosition;
+                toolFollower.ToggleBubbles(true); // Emit bubbles while moving
+            }
+            else 
+            {
+                toolFollower.ToggleBubbles(false); // Stop bubbles if not moving
+            }
+        }
+
+        if (Mouse.current.leftButton.wasReleasedThisFrame)
+        {
+            isCleaning = false;
+            toolFollower.ToggleBubbles(false); // Stop emitting on release
+        }
     }
 
     private void PerformCleaning()
@@ -117,7 +149,7 @@ public class GameManager : MonoBehaviour
     private void ApplyCleaningToolSprite()
     {
         CleaningTool activeTool = tools[currentCleaningTool];
-        toolFollower.UpdateCleaningSprite(activeTool.toolSprite, activeTool.type);
+        toolFollower.UpdateCleaningSprite(activeTool.toolSprite, activeTool.activeSprite, activeTool.type);
     }
 
     public void QuitGame()

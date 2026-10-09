@@ -8,6 +8,11 @@ public class CleaningCursor : MonoBehaviour
 
     [Header("Tool Visuals")]
     [SerializeField] private SpriteRenderer spriteRenderer;
+    [Tooltip("Optional: Secondary overlay SpriteRenderer (e.g., foam or bubbles child object) active while cleaning")]
+    [SerializeField] private SpriteRenderer secondaryOverlayRenderer;
+
+    [Header("Particle Effects")]
+    [SerializeField] private ParticleSystem bubbleParticles;
 
     [Header("Cursor Speed & Friction")]
     [Tooltip("How fast the cursor follows the mouse while holding left click to clean (Lower = heavier friction)")]
@@ -22,6 +27,9 @@ public class CleaningCursor : MonoBehaviour
     [Tooltip("Minimum drag distance in pixels to trigger a side flip")]
     [SerializeField] private float swipeThreshold = 60f;
 
+    private Sprite normalSprite;
+    private Sprite activeSprite;
+
     private Vector2 swipeStartPosition;
     private bool isSwiping = false;
 
@@ -30,7 +38,6 @@ public class CleaningCursor : MonoBehaviour
         if (spriteRenderer == null)
             spriteRenderer = GetComponent<SpriteRenderer>();
 
-        // Auto-find ObjectRotator in scene if not assigned in Inspector
         if (objectRotator == null)
             objectRotator = Object.FindFirstObjectByType<ObjectRotator>();
 
@@ -41,6 +48,7 @@ public class CleaningCursor : MonoBehaviour
     {
         FollowMousePointer();
         HandleSwipeInput();
+        UpdateVisuals();
     }
 
     private void FollowMousePointer()
@@ -50,25 +58,21 @@ public class CleaningCursor : MonoBehaviour
         Vector2 mouseScreenPos2D = Mouse.current.position.ReadValue();
         Vector3 mouseScreenPos = new Vector3(mouseScreenPos2D.x, mouseScreenPos2D.y, 0f);
 
-        // Set camera depth offset
         mouseScreenPos.z = Mathf.Abs(Camera.main.transform.position.z);
 
         Vector3 targetWorldPos = Camera.main.ScreenToWorldPoint(mouseScreenPos);
         targetWorldPos.z = 0f;
 
-        // Detect if left click is held down (cleaning state)
         bool isCleaning = Mouse.current.leftButton.isPressed;
 
         if (isCleaning)
         {
-            // Smoothly drag the cursor toward target mouse position (adds friction feel)
             transform.position = Vector3.Lerp(transform.position, targetWorldPos, cleaningFollowSpeed * Time.deltaTime);
         }
         else
         {
             if (instantWhenNotCleaning)
             {
-                // Snap directly to mouse position
                 transform.position = targetWorldPos;
             }
             else
@@ -78,49 +82,58 @@ public class CleaningCursor : MonoBehaviour
         }
     }
 
+    private void UpdateVisuals()
+    {
+        if (Mouse.current == null) return;
+
+        bool isCleaning = Mouse.current.leftButton.isPressed;
+
+        // Swap main tool sprite between idle and active cleaning state
+        if (spriteRenderer != null)
+        {
+            if (isCleaning && activeSprite != null)
+            {
+                spriteRenderer.sprite = activeSprite;
+            }
+            else if (normalSprite != null)
+            {
+                spriteRenderer.sprite = normalSprite;
+            }
+        }
+
+        // Toggle optional secondary overlay graphics (e.g. soap bubbles or splashes)
+        if (secondaryOverlayRenderer != null)
+        {
+            secondaryOverlayRenderer.enabled = isCleaning;
+        }
+    }
+
     private void HandleSwipeInput()
     {
         if (Mouse.current == null || objectRotator == null) return;
 
-        // Right mouse button pressed down
         if (Mouse.current.rightButton.wasPressedThisFrame)
         {
             swipeStartPosition = Mouse.current.position.ReadValue();
             isSwiping = true;
         }
 
-        // Right mouse button released
         if (Mouse.current.rightButton.wasReleasedThisFrame && isSwiping)
         {
             Vector2 swipeEndPosition = Mouse.current.position.ReadValue();
             Vector2 delta = swipeEndPosition - swipeStartPosition;
 
-            // Check if the overall swipe vector exceeds the threshold
             if (delta.magnitude >= swipeThreshold)
             {
                 if (Mathf.Abs(delta.x) > Mathf.Abs(delta.y))
                 {
-                    // Horizontal Swipes
-                    if (delta.x < 0)
-                    {
-                        objectRotator.RotateRight(); // Swiped Left -> rotate to view right side
-                    }
-                    else
-                    {
-                        objectRotator.RotateLeft();  // Swiped Right -> rotate to view left side
-                    }
+                    if (delta.x < 0) objectRotator.RotateRight();
+                    else objectRotator.RotateLeft();
                 }
                 else
                 {
-                    // Vertical Swipes
-                    if (delta.y > 0)
-                    {
-                        objectRotator.RotateUp();    // Swiped Up -> flip to top side
-                    }
-                    else
-                    {
-                        objectRotator.RotateDown();  // Swiped Down -> flip to bottom side
-                    }
+                    if (delta.y > 0) objectRotator.RotateUp();
+                    else objectRotator.RotateDown();
                 }
             }
 
@@ -128,12 +141,28 @@ public class CleaningCursor : MonoBehaviour
         }
     }
 
-    public void UpdateCleaningSprite(Sprite newCleaningTool, ToolType newTool)
+    public void UpdateCleaningSprite(Sprite newCleaningTool, Sprite newActiveSprite, ToolType newTool)
     {
         currentTool = newTool;
-        if (spriteRenderer != null)
+        normalSprite = newCleaningTool;
+        activeSprite = newActiveSprite;
+
+        if (spriteRenderer != null && normalSprite != null)
         {
-            spriteRenderer.sprite = newCleaningTool;
+            spriteRenderer.sprite = normalSprite;
         }
     }
+
+    public void ToggleBubbles(bool shouldEmit)
+{
+    if (bubbleParticles == null) return;
+
+    var emission = bubbleParticles.emission;
+    emission.enabled = shouldEmit;
+
+    if (shouldEmit && !bubbleParticles.isPlaying)
+    {
+        bubbleParticles.Play();
+    }
+}
 }

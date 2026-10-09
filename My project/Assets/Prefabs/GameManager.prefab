@@ -44,21 +44,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cebe4018787f584dbff2ce86f9ce752, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameController
+  audioSource: {fileID: 0}
+  buttonClickSound: {fileID: 8300000, guid: 4c49b682b9879914a9b2202099d1944a, type: 3}
+  startMenuPanel: {fileID: 0}
+  winScreenPanel: {fileID: 0}
+  progressBarUI: {fileID: 0}
+  firstSelectedButton: {fileID: 0}
+  toolFollower: {fileID: 0}
   tools:
   - toolName: Sponge
     type: 0
     toolSprite: {fileID: -8030576672439078271, guid: 9777f85ebf1e0d949a3430fbb3f188bd, type: 3}
+    activeSprite: {fileID: 7707926222177819865, guid: 585e009ef03c5884dbd6c5afb7796c03, type: 3}
   - toolName: Rag
     type: 1
     toolSprite: {fileID: 3920257120495934008, guid: 740a8cc89a45442478a9f05097b0def2, type: 3}
+    activeSprite: {fileID: -4620167303746055434, guid: fe4178ff286638d4a805c954a5503fb9, type: 3}
   - toolName: Glass Cleaner
     type: 2
     toolSprite: {fileID: -5644809230751511779, guid: f523867b945cad74cb695eaa9a9ef1ef, type: 3}
+    activeSprite: {fileID: 642798569753127558, guid: 851100a2671f3dc459c3a965745e90e0, type: 3}
   - toolName: Duster
     type: 3
     toolSprite: {fileID: 1806098362823331211, guid: 0bf0f5158e22f344080302c7a83a9bfb, type: 3}
-  toolFollower: {fileID: 0}
+    activeSprite: {fileID: 4816202170203666811, guid: b375008942c867744ad96368b84cc9b2, type: 3}
   dirtLayer:
     serializedVersion: 2
     m_Bits: 64
   cleaningRadius: 0.2
+  minMovementThreshold: 0.1
