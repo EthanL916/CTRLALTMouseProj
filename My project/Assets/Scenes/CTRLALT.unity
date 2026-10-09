@@ -584,7 +584,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 56.6
+  m_fontSize: 67.7
   m_fontSizeBase: 58.72
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -957,7 +957,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 69.8
   m_fontSizeBase: 58.72
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2420,7 +2420,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3792634707848070360, guid: b00b083958533ef4cbc2266e8e6ba7b1, type: 3}
+  m_Sprite: {fileID: 2033631424256772861, guid: 0c3c0655c86493b4596be0b7a21e8c5a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3416,12 +3416,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 14681271676904702, guid: 5e0ce2cfc759b5348935fe56b73f1e00, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6068096
+      objectReference: {fileID: 0}
+    - target: {fileID: 14681271676904702, guid: 5e0ce2cfc759b5348935fe56b73f1e00, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6068096
+      objectReference: {fileID: 0}
+    - target: {fileID: 14681271676904702, guid: 5e0ce2cfc759b5348935fe56b73f1e00, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6068096
+      objectReference: {fileID: 0}
+    - target: {fileID: 14681271676904702, guid: 5e0ce2cfc759b5348935fe56b73f1e00, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 14681271676904702, guid: 5e0ce2cfc759b5348935fe56b73f1e00, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.88
+      value: -1.12
       objectReference: {fileID: 0}
     - target: {fileID: 14681271676904702, guid: 5e0ce2cfc759b5348935fe56b73f1e00, type: 3}
       propertyPath: m_LocalPosition.z
