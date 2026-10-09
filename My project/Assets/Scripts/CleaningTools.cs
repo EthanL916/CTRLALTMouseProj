@@ -13,6 +13,6 @@ public class CleaningTool
 {
     public string toolName;
     public ToolType type;
-
+    public Sprite toolSprite;
     public Sprite activeSprite;
 }
