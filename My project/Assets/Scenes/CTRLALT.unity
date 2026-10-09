@@ -584,7 +584,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 68.15
+  m_fontSize: 71.85
   m_fontSizeBase: 58.72
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1048,7 +1048,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70.25
+  m_fontSize: 72
   m_fontSizeBase: 58.72
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2917,7 +2917,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1752866880
 RectTransform:
   m_ObjectHideFlags: 0
