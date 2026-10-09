@@ -16,4 +16,5 @@ public class CleaningTool
     public Sprite toolSprite;
     public Sprite activeSprite;
     public ToolType unknown;
+    void;
 }
