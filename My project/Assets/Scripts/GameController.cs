@@ -4,9 +4,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
 using UnityEngine.EventSystems;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
+    // Static Singleton instance so DirtTracker can communicate with GameManager
+    public static GameManager Instance { get; private set; }
+
     [Header("Audio Settings")]
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip buttonClickSound;
@@ -24,14 +28,35 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float cleaningRadius = 0.5f;
     [SerializeField] private float minMovementThreshold = 0.1f; // Minimum distance the tool must move to count as cleaning
 
+    [Header("Timer Settings")]
+    [SerializeField] private TMP_Text timerText;
+    private float elapsedTime = 0f;
+    private bool isTimerRunning = true;
+
+    [Header("Win Screen UI")]
+    [SerializeField] private GameObject winPanel;
+    [SerializeField] private TMP_Text finalTimeText;
+
     private int currentCleaningTool = 0;
     private bool isCleaning = false;
     private bool isGameActive = false;
     private Vector3 lastToolPosition;
 
+    private void Awake()
+    {
+        // Setup Singleton reference
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
     private void Start()
     {
-        // Disable gameplay controls until Start Game is clicked
         isGameActive = false;
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
@@ -48,10 +73,16 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (!isGameActive) return; // Freeze gameplay inputs while menu is active
+        if (!isGameActive) return;
 
         CleaningToolSwitching();
         CleaningInput();
+
+        if (isTimerRunning)
+        {
+            elapsedTime += Time.deltaTime;
+            UpdateTimerDisplay();
+        }
     }
 
     public void StartGame()
@@ -186,5 +217,58 @@ public class GameManager : MonoBehaviour
         }
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    private void UpdateTimerDisplay()
+    {
+        if (timerText == null) return;
+
+        int minutes = Mathf.FloorToInt(elapsedTime / 60f);
+        int seconds = Mathf.FloorToInt(elapsedTime % 60f);
+        int milliseconds = Mathf.FloorToInt((elapsedTime * 100f) % 100f);
+
+        // Formats as "01:23.45"
+        timerText.text = string.Format("{0:00}:{1:00}.{2:00}", minutes, seconds, milliseconds);
+    }
+
+    public void StopTimer()
+    {
+        isTimerRunning = false;
+    }
+
+    public float GetFinalTime()
+    {
+        return elapsedTime;
+    }
+
+    public void TriggerWinScreen()
+    {
+        // 1. Stop the active timer
+        StopTimer();
+
+        // 2. Unhide mouse cursor so player can click win buttons
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+
+        // 3. Display the Win Screen panel (supports winPanel or winScreenPanel)
+        if (winPanel != null)
+        {
+            winPanel.SetActive(true);
+        }
+        else if (winScreenPanel != null)
+        {
+            winScreenPanel.SetActive(true);
+        }
+
+        // 4. Format final time string
+        if (finalTimeText != null)
+        {
+            int minutes = Mathf.FloorToInt(elapsedTime / 60f);
+            int seconds = Mathf.FloorToInt(elapsedTime % 60f);
+            int milliseconds = Mathf.FloorToInt((elapsedTime * 100f) % 100f);
+
+            string formattedTime = string.Format("{0:00}:{1:00}.{2:00}", minutes, seconds, milliseconds);
+            finalTimeText.text = "Clear Time: " + formattedTime;
+        }
     }
 }

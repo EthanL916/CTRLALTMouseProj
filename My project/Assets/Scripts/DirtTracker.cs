@@ -99,18 +99,21 @@ public class DirtTracker : MonoBehaviour
     {
         hasWon = true;
 
-        // Lock gameplay controls
-        if (gameManager != null) gameManager.enabled = false;
+        // Lock cursor component controls
         if (cleaningCursor != null) cleaningCursor.enabled = false;
 
-        // Make standard mouse cursor visible for victory menu interaction
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None;
-
-        // Display victory overlay
-        if (winScreenPanel != null)
+        // Pass win event to GameManager to format time and open win UI
+        if (gameManager != null)
         {
+            gameManager.TriggerWinScreen();
+            gameManager.enabled = false; // Disable gameplay inputs after triggering win
+        }
+        else if (winScreenPanel != null)
+        {
+            // Fallback if GameManager is missing
             winScreenPanel.SetActive(true);
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
         }
     }
 }
