@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CTRLALT.unity
     guid: 5c472ab1639a0794aa4e6cf28c5f74c1
+  - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: 43ff601cded9e2a428aae5ad9ca019e0
   - enabled: 0
     path: Assets/Scenes/You_Win_Screen.unity
     guid: cd22bf53545dea247b005328cd38deb6

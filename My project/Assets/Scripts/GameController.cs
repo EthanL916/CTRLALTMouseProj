@@ -57,6 +57,13 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        // If no start menu exists in this scene (e.g. Level 2), start gameplay immediately
+        if (startMenuPanel == null)
+        {
+            StartGame();
+            return;
+        }
+
         isGameActive = false;
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
@@ -270,5 +277,30 @@ public class GameManager : MonoBehaviour
             string formattedTime = string.Format("{0:00}:{1:00}.{2:00}", minutes, seconds, milliseconds);
             finalTimeText.text = "Clear Time: " + formattedTime;
         }
+    }
+    public void LoadNextLevel()
+    {
+    StartCoroutine(PlaySoundAndNextLevel());
+    }
+    private IEnumerator PlaySoundAndNextLevel()
+    {
+    if (audioSource != null && buttonClickSound != null)
+    {
+        audioSource.PlayOneShot(buttonClickSound);
+        yield return new WaitForSecondsRealtime(buttonClickSound.length);
+    }
+
+    int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+
+    // Check if there is another level in Build Settings
+    if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
+    {
+        SceneManager.LoadScene(nextSceneIndex);
+    }
+    else
+    {
+        // If it was the last level, return to the start/main menu (Scene 0)
+        SceneManager.LoadScene(0);
+    }
     }
 }
