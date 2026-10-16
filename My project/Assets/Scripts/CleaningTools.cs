@@ -15,4 +15,5 @@ public class CleaningTool
     public ToolType type;
     public Sprite toolSprite;
     public Sprite activeSprite;
+    public AudioClip cleaningSound;
 }

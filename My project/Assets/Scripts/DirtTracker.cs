@@ -101,6 +101,13 @@ public class DirtTracker : MonoBehaviour
 
         // Lock cursor component controls
         if (cleaningCursor != null) cleaningCursor.enabled = false;
+        if (currentProgressFraction >= 0.999f)
+        {
+            if (GameManager.Instance != null)
+            {
+                GameManager.Instance.TriggerWinScreen();
+            }
+        }
 
         // Pass win event to GameManager to format time and open win UI
         if (gameManager != null)
@@ -116,4 +123,5 @@ public class DirtTracker : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
         }
     }
+
 }

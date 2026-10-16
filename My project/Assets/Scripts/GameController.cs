@@ -11,9 +11,21 @@ public class GameManager : MonoBehaviour
     // Static Singleton instance so DirtTracker can communicate with GameManager
     public static GameManager Instance { get; private set; }
 
+    [Header("Background Music Settings")]
+    [SerializeField] private AudioSource bgmAudioSource; // Dedicated BGM AudioSource
+    [SerializeField] private AudioClip startMenuMusic;
+    [SerializeField] private AudioClip gameplayMusic;
+    [SerializeField] private AudioClip victoryMusic;
+
+
     [Header("Audio Settings")]
     [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioSource scrubAudioSource;
     [SerializeField] private AudioClip buttonClickSound;
+    [SerializeField] private float soundStopDelay = 0.15f; // Prevents rapid start/stop crackling
+    private float stopTimer = 0f;
+    [SerializeField] private AudioClip boxFlipSound;
+
 
     [Header("UI Panels & Navigation")]
     [SerializeField] private GameObject startMenuPanel;
@@ -72,10 +84,13 @@ public class GameManager : MonoBehaviour
         if (progressBarUI != null) progressBarUI.SetActive(false);
         if (toolFollower != null) toolFollower.enabled = false;
 
+        PlayMusic(startMenuMusic);
+
         if (firstSelectedButton != null && EventSystem.current != null)
         {
             EventSystem.current.SetSelectedGameObject(firstSelectedButton);
         }
+        
     }
 
     private void Update()
@@ -111,6 +126,19 @@ public class GameManager : MonoBehaviour
         {
             EventSystem.current.SetSelectedGameObject(null);
         }
+        PlayMusic(gameplayMusic);
+    }
+
+    public void PlayMusic(AudioClip newClip)
+    {
+        if (bgmAudioSource == null || newClip == null) return;
+
+        // Don't restart if the exact same music is already playing
+        if (bgmAudioSource.clip == newClip && bgmAudioSource.isPlaying) return;
+
+        bgmAudioSource.clip = newClip;
+        bgmAudioSource.loop = true;
+        bgmAudioSource.Play();
     }
 
     private void CleaningToolSwitching()
@@ -132,12 +160,19 @@ public class GameManager : MonoBehaviour
 
     private void CleaningInput()
     {
-        if (toolFollower == null || Mouse.current == null) return;
+        if (!isGameActive || toolFollower == null || Mouse.current == null)
+        {
+            if (isCleaning)
+            {
+                isCleaning = false;
+                StopScrubSound();
+            }
+            return;
+        }
 
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
             isCleaning = true;
-            // Record initial position when starting a scrub
             lastToolPosition = toolFollower.transform.position;
         }
 
@@ -146,24 +181,74 @@ public class GameManager : MonoBehaviour
             Vector3 currentToolPosition = toolFollower.transform.position;
             float distanceMoved = Vector3.Distance(currentToolPosition, lastToolPosition);
 
-            // Only clean if the tool is actively moving/scrubbing across the surface
             if (distanceMoved >= minMovementThreshold)
             {
                 PerformCleaning();
-                // Reset tracking position to current spot after scrubbing
+
+                // Exit immediately if PerformCleaning() triggered TriggerWinScreen()
+                if (!isGameActive)
+                {
+                    isCleaning = false;
+                    StopScrubSound();
+                    return;
+                }
+
                 lastToolPosition = currentToolPosition;
-                toolFollower.ToggleBubbles(true); // Emit bubbles while moving
+                toolFollower.ToggleBubbles(true);
+
+                stopTimer = soundStopDelay;
+                PlayScrubSound();
             }
             else 
             {
-                toolFollower.ToggleBubbles(false); // Stop bubbles if not moving
+                toolFollower.ToggleBubbles(false);
             }
         }
 
         if (Mouse.current.leftButton.wasReleasedThisFrame)
         {
             isCleaning = false;
-            toolFollower.ToggleBubbles(false); // Stop emitting on release
+            if (toolFollower != null) toolFollower.ToggleBubbles(false);
+            stopTimer = 0f;
+            StopScrubSound();
+        }
+
+        // Count down timer and pause audio when movement stops
+        if (isCleaning && stopTimer > 0f)
+        {
+            stopTimer -= Time.deltaTime;
+            if (stopTimer <= 0f)
+            {
+                StopScrubSound();
+            }
+        }
+    }
+
+    private void PlayScrubSound()
+    {
+        if (scrubAudioSource == null || tools == null || tools.Count == 0) return;
+
+    AudioClip currentClip = tools[currentCleaningTool].cleaningSound;
+        if (currentClip == null) return;
+
+    // Swap clip if tool changed
+    if (scrubAudioSource.clip != currentClip)
+        {
+            scrubAudioSource.clip = currentClip;
+            scrubAudioSource.loop = true;
+        }
+
+        if (!scrubAudioSource.isPlaying)
+        {
+            scrubAudioSource.Play();
+        }
+    }
+
+    private void StopScrubSound()
+    {
+        if (scrubAudioSource != null && scrubAudioSource.isPlaying)
+        {
+            scrubAudioSource.Pause();
         }
     }
 
@@ -188,6 +273,15 @@ public class GameManager : MonoBehaviour
     {
         CleaningTool activeTool = tools[currentCleaningTool];
         toolFollower.UpdateCleaningSprite(activeTool.toolSprite, activeTool.activeSprite, activeTool.type);
+    }
+
+    public void PlayFlipSound()
+    {
+        if (audioSource != null && boxFlipSound != null)
+        {
+            audioSource.loop = false; // Prevents the flip clip from looping endlessly
+            audioSource.PlayOneShot(boxFlipSound);
+        }
     }
 
     public void QuitGame()
@@ -250,14 +344,32 @@ public class GameManager : MonoBehaviour
 
     public void TriggerWinScreen()
     {
-        // 1. Stop the active timer
+        // 1. Immediately halt game state, scrubbing flags, and sound timer
+        isGameActive = false;
+        isCleaning = false;
+        stopTimer = 0f;
+
+        // 2. Stop the active timer
         StopTimer();
 
-        // 2. Unhide mouse cursor so player can click win buttons
+        // 3. Kill scrubbing audio loop immediately
+        if (scrubAudioSource != null)
+        {
+            scrubAudioSource.Stop();
+        }
+
+        // 4. Disable bubbles and tool follower script so it stops tracking mouse on UI
+        if (toolFollower != null)
+        {
+            toolFollower.ToggleBubbles(false);
+            toolFollower.enabled = false;
+        }
+
+        // 5. Unhide mouse cursor so player can click win buttons
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
 
-        // 3. Display the Win Screen panel (supports winPanel or winScreenPanel)
+        // 6. Display the Win Screen panel
         if (winPanel != null)
         {
             winPanel.SetActive(true);
@@ -267,7 +379,13 @@ public class GameManager : MonoBehaviour
             winScreenPanel.SetActive(true);
         }
 
-        // 4. Format final time string
+        // 7. Play victory music
+        if (victoryMusic != null)
+        {
+            PlayMusic(victoryMusic);
+        }
+
+        // 8. Format final time string
         if (finalTimeText != null)
         {
             int minutes = Mathf.FloorToInt(elapsedTime / 60f);
@@ -280,27 +398,28 @@ public class GameManager : MonoBehaviour
     }
     public void LoadNextLevel()
     {
-    StartCoroutine(PlaySoundAndNextLevel());
+        StartCoroutine(PlaySoundAndNextLevel());
     }
     private IEnumerator PlaySoundAndNextLevel()
     {
-    if (audioSource != null && buttonClickSound != null)
-    {
-        audioSource.PlayOneShot(buttonClickSound);
-        yield return new WaitForSecondsRealtime(buttonClickSound.length);
-    }
+        if (audioSource != null && buttonClickSound != null)
+        {
+            audioSource.PlayOneShot(buttonClickSound);
+            yield return new WaitForSecondsRealtime(buttonClickSound.length);
+        }
 
     int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
 
     // Check if there is another level in Build Settings
     if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
-    {
-        SceneManager.LoadScene(nextSceneIndex);
+        {
+            SceneManager.LoadScene(nextSceneIndex);
+        }
+        else
+        {
+            // If it was the last level, return to the start/main menu (Scene 0)
+            SceneManager.LoadScene(0);
+        }
     }
-    else
-    {
-        // If it was the last level, return to the start/main menu (Scene 0)
-        SceneManager.LoadScene(0);
-    }
-    }
+    
 }

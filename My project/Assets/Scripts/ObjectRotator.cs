@@ -33,61 +33,65 @@ public class ObjectRotator : MonoBehaviour
     private void TriggerRotation(SwipeDirection dir, bool isHorizontal)
     {
         if (isAnimating) return;
+
         int nextSide = GetNextSide(currentSideIndex, dir);
+
+        if (nextSide == currentSideIndex) return;
+
         StartCoroutine(AnimateFlip(nextSide, isHorizontal));
     }
 
     private int GetNextSide(int current, SwipeDirection dir)
     {
-    switch (current)
+        switch (current)
         {
-        // 0: FRONT
-        case 0:
-            if (dir == SwipeDirection.Left) return 1;  // Right
-            if (dir == SwipeDirection.Right) return 3; // Left
-            if (dir == SwipeDirection.Up) return 4;    // Top
-            if (dir == SwipeDirection.Down) return 5;  // Bottom
-            break;
+            // 0: FRONT
+            case 0:
+                if (dir == SwipeDirection.Left) return 1;  // Right
+                if (dir == SwipeDirection.Right) return 3; // Left
+                if (dir == SwipeDirection.Up) return 4;    // Top
+                if (dir == SwipeDirection.Down) return 5;  // Bottom
+                break;
 
-        // 1: RIGHT
-        case 1:
-            if (dir == SwipeDirection.Left) return 2;  // Back
-            if (dir == SwipeDirection.Right) return 0; // Front
-            if (dir == SwipeDirection.Up) return 4;    // Top
-            if (dir == SwipeDirection.Down) return 5;  // Bottom
-            break;
+            // 1: RIGHT
+            case 1:
+                if (dir == SwipeDirection.Left) return 2;  // Back
+                if (dir == SwipeDirection.Right) return 0; // Front
+                if (dir == SwipeDirection.Up) return 4;    // Top
+                if (dir == SwipeDirection.Down) return 5;  // Bottom
+                break;
 
-        // 2: BACK (Inverted relative to Front)
-        case 2:
-            if (dir == SwipeDirection.Left) return 3;  // Left
-            if (dir == SwipeDirection.Right) return 1; // Right
-            if (dir == SwipeDirection.Up) return 5;    // Bottom (Swiping UP on Back moves to Bottom!)
-            if (dir == SwipeDirection.Down) return 4;  // Top (Swiping DOWN on Back moves to Top!)
-            break;
+            // 2: BACK (Inverted relative to Front)
+            case 2:
+                if (dir == SwipeDirection.Left) return 3;  // Left
+                if (dir == SwipeDirection.Right) return 1; // Right
+                if (dir == SwipeDirection.Up) return 5;    // Bottom
+                if (dir == SwipeDirection.Down) return 4;  // Top
+                break;
 
-        // 3: LEFT
-        case 3:
-            if (dir == SwipeDirection.Left) return 0;  // Front
-            if (dir == SwipeDirection.Right) return 2; // Back
-            if (dir == SwipeDirection.Up) return 4;    // Top
-            if (dir == SwipeDirection.Down) return 5;  // Bottom
-            break;
+            // 3: LEFT
+            case 3:
+                if (dir == SwipeDirection.Left) return 0;  // Front
+                if (dir == SwipeDirection.Right) return 2; // Back
+                if (dir == SwipeDirection.Up) return 4;    // Top
+                if (dir == SwipeDirection.Down) return 5;  // Bottom
+                break;
 
-        // 4: TOP
-        case 4:
-            if (dir == SwipeDirection.Down) return 0;  // Pull down to Front
-            if (dir == SwipeDirection.Up) return 2;    // Push up to Back
-            if (dir == SwipeDirection.Left) return 1;  // Right
-            if (dir == SwipeDirection.Right) return 3; // Left
-            break;
+            // 4: TOP
+            case 4:
+                if (dir == SwipeDirection.Down) return 0;  // Pull down to Front
+                if (dir == SwipeDirection.Up) return 2;    // Push up to Back
+                if (dir == SwipeDirection.Left) return 1;  // Right
+                if (dir == SwipeDirection.Right) return 3; // Left
+                break;
 
-        // 5: BOTTOM
-        case 5:
-            if (dir == SwipeDirection.Up) return 0;    // Push up to Front
-            if (dir == SwipeDirection.Down) return 2;  // Pull down to Back
-            if (dir == SwipeDirection.Left) return 1;  // Right
-            if (dir == SwipeDirection.Right) return 3; // Left
-            break;
+            // 5: BOTTOM
+            case 5:
+                if (dir == SwipeDirection.Up) return 0;    // Push up to Front
+                if (dir == SwipeDirection.Down) return 2;  // Pull down to Back
+                if (dir == SwipeDirection.Left) return 1;  // Right
+                if (dir == SwipeDirection.Right) return 3; // Left
+                break;
         }
 
         return current;
@@ -98,6 +102,12 @@ public class ObjectRotator : MonoBehaviour
         if (targetIndex == currentSideIndex) yield break;
 
         isAnimating = true;
+
+        // Trigger flip sound ONCE when the animation officially starts
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.PlayFlipSound();
+        }
 
         float timer = 0f;
         Vector3 startScale = transform.localScale;
