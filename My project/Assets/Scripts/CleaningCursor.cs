@@ -8,23 +8,18 @@ public class CleaningCursor : MonoBehaviour
 
     [Header("Tool Visuals")]
     [SerializeField] private SpriteRenderer spriteRenderer;
-    [Tooltip("Optional: Secondary overlay SpriteRenderer (e.g., foam or bubbles child object) active while cleaning")]
     [SerializeField] private SpriteRenderer secondaryOverlayRenderer;
 
     [Header("Particle Effects")]
     [SerializeField] private ParticleSystem bubbleParticles;
 
-    [Header("Cursor Speed & Friction")]
-    [Tooltip("How fast the cursor follows the mouse while holding left click to clean (Lower = heavier friction)")]
+    [Header("Cursor Speed Settings")]
     [SerializeField] private float cleaningFollowSpeed = 12f;
-    [Tooltip("If true, the cursor snaps 1:1 with the mouse when NOT cleaning.")]
     [SerializeField] private bool instantWhenNotCleaning = true;
-    [Tooltip("Follow speed when not cleaning (only used if Instant When Not Cleaning is false)")]
     [SerializeField] private float normalFollowSpeed = 35f;
 
     [Header("Rotation Settings")]
     [SerializeField] private ObjectRotator objectRotator;
-    [Tooltip("Minimum drag distance in pixels to trigger a side flip")]
     [SerializeField] private float swipeThreshold = 60f;
 
     private Sprite normalSprite;
@@ -36,11 +31,16 @@ public class CleaningCursor : MonoBehaviour
     private void Start()
     {
         if (spriteRenderer == null)
+        {
             spriteRenderer = GetComponent<SpriteRenderer>();
+        }
 
         if (objectRotator == null)
+        {
             objectRotator = Object.FindFirstObjectByType<ObjectRotator>();
+        }
 
+        // Hide mouse pointer
         Cursor.visible = false;
     }
 
@@ -88,7 +88,7 @@ public class CleaningCursor : MonoBehaviour
 
         bool isCleaning = Mouse.current.leftButton.isPressed;
 
-        // Swap main tool sprite between idle and active cleaning state
+        // Idle Sprite
         if (spriteRenderer != null)
         {
             if (isCleaning && activeSprite != null)
@@ -101,7 +101,7 @@ public class CleaningCursor : MonoBehaviour
             }
         }
 
-        // Toggle optional secondary overlay graphics (e.g. soap bubbles or splashes)
+        // Cleaning Sprite
         if (secondaryOverlayRenderer != null)
         {
             secondaryOverlayRenderer.enabled = isCleaning;
@@ -112,12 +112,14 @@ public class CleaningCursor : MonoBehaviour
     {
         if (Mouse.current == null || objectRotator == null) return;
 
+        // Right Click Down
         if (Mouse.current.rightButton.wasPressedThisFrame)
         {
             swipeStartPosition = Mouse.current.position.ReadValue();
             isSwiping = true;
         }
 
+        // Right Click Release
         if (Mouse.current.rightButton.wasReleasedThisFrame && isSwiping)
         {
             Vector2 swipeEndPosition = Mouse.current.position.ReadValue();
@@ -125,15 +127,30 @@ public class CleaningCursor : MonoBehaviour
 
             if (delta.magnitude >= swipeThreshold)
             {
-                if (Mathf.Abs(delta.x) > Mathf.Abs(delta.y))
+                float xDistance = Mathf.Abs(delta.x);
+                float yDistance = Mathf.Abs(delta.y);
+
+                if (xDistance > yDistance)
                 {
-                    if (delta.x < 0) objectRotator.RotateRight();
-                    else objectRotator.RotateLeft();
+                    if (delta.x < 0)
+                    {
+                        objectRotator.RotateRight();
+                    }
+                    else
+                    {
+                        objectRotator.RotateLeft();
+                    }
                 }
                 else
                 {
-                    if (delta.y > 0) objectRotator.RotateUp();
-                    else objectRotator.RotateDown();
+                    if (delta.y > 0)
+                    {
+                        objectRotator.RotateUp();
+                    }
+                    else
+                    {
+                        objectRotator.RotateDown();
+                    }
                 }
             }
 
@@ -141,6 +158,7 @@ public class CleaningCursor : MonoBehaviour
         }
     }
 
+    // Switch tools
     public void UpdateCleaningSprite(Sprite newCleaningTool, Sprite newActiveSprite, ToolType newTool)
     {
         currentTool = newTool;
@@ -153,16 +171,20 @@ public class CleaningCursor : MonoBehaviour
         }
     }
 
+    // Bubble particles
     public void ToggleBubbles(bool shouldEmit)
-{
-    if (bubbleParticles == null) return;
-
-    var emission = bubbleParticles.emission;
-    emission.enabled = shouldEmit;
-
-    if (shouldEmit && !bubbleParticles.isPlaying)
     {
-        bubbleParticles.Play();
+        if (bubbleParticles == null) return;
+
+        var emission = bubbleParticles.emission;
+        emission.enabled = shouldEmit;
+
+        if (shouldEmit)
+        {
+            if (bubbleParticles.isPlaying == false)
+            {
+                bubbleParticles.Play();
+            }
+        }
     }
-}
 }

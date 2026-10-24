@@ -15,7 +15,7 @@ public class ObjectRotator : MonoBehaviour
     public float swipeThreshold = 50f;
 
     private int currentSideIndex = 0; // Starts at Front (0)
-    private int lastHorizontalIndex = 0; // Remembers Front(0), Right(1), Back(2), or Left(3)
+    private int lastHorizontalIndex = 0; // Remember Front(0), Right(1), Back(2), or Left(3)
     private bool isAnimating = false;
 
     private enum SwipeDirection { Left, Right, Up, Down }
@@ -103,7 +103,6 @@ public class ObjectRotator : MonoBehaviour
 
         isAnimating = true;
 
-        // Trigger flip sound ONCE when the animation officially starts
         if (GameManager.Instance != null)
         {
             GameManager.Instance.PlayFlipSound();
@@ -116,7 +115,6 @@ public class ObjectRotator : MonoBehaviour
             new Vector3(0f, startScale.y, startScale.z) : 
             new Vector3(startScale.x, 0f, startScale.z);
 
-        // 1. Squeeze Flat
         while (timer < flipDuration)
         {
             timer += Time.deltaTime;
@@ -124,17 +122,14 @@ public class ObjectRotator : MonoBehaviour
             yield return null;
         }
 
-        // Store the last horizontal face index BEFORE changing if current is horizontal
         if (currentSideIndex < 4)
         {
             lastHorizontalIndex = currentSideIndex;
         }
 
-        // 2. Switch Visible Face
         currentSideIndex = targetIndex;
         UpdateVisibleSideImmediate();
 
-        // 3. Expand Back Out
         timer = 0f;
         while (timer < flipDuration)
         {

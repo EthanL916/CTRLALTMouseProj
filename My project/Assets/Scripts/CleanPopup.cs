@@ -1,56 +1,57 @@
 using UnityEngine;
-using TMPro; // Crucial for accessing TextMeshPro
+using TMPro; 
 
 public class CleanPopup : MonoBehaviour
 {
     [Header("Settings")]
     [SerializeField] private float floatSpeed = 1.0f;
-    [SerializeField] private float lifetime = 0.75f;
+    [SerializeField] private float lifetime = 1.5f; 
     [SerializeField] private TextMeshPro textComponent;
 
     [Header("Visuals")]
     [SerializeField] private Vector3 popScaleAmount = new Vector3(1.3f, 1.3f, 1.0f);
 
-    private float timer;
+    private float timer = 0f;
     private Color startTextColor;
 
-    void Start()
+    private void Start()
     {
         if (textComponent == null)
+        {
             textComponent = GetComponent<TextMeshPro>();
+        }
 
-        // Capture initial color to handle fading
-        startTextColor = textComponent.color;
+        if (textComponent != null)
+        {
+            startTextColor = textComponent.color;
+        }
 
-        // Optional: Start slightly smaller for a "pop" animation
         transform.localScale = Vector3.one * 0.5f;
     }
 
-    void Update()
+    private void Update()
     {
-        timer += Time.deltaTime;
-        float normalizedTime = timer / lifetime;
+        if (textComponent == null) return;
 
-        // 1. Move Up
+        timer += Time.deltaTime;
+        float normalizedTime = timer / lifetime; 
+
         transform.Translate(Vector3.up * floatSpeed * Time.deltaTime);
 
-        // 2. Pop Animation (quickly grow then steady)
         if (normalizedTime < 0.2f)
         {
-            // Grow quickly
-            transform.localScale = Vector3.Lerp(Vector3.one * 0.5f, popScaleAmount, normalizedTime / 0.2f);
+            float growProgress = normalizedTime / 0.2f;
+            transform.localScale = Vector3.Lerp(Vector3.one * 0.5f, popScaleAmount, growProgress);
         }
         else
         {
-            // Subtle settle
-            transform.localScale = Vector3.Lerp(popScaleAmount, Vector3.one, (normalizedTime - 0.2f) / 0.8f);
+            float shrinkProgress = (normalizedTime - 0.2f) / 0.8f;
+            transform.localScale = Vector3.Lerp(popScaleAmount, Vector3.one, shrinkProgress);
         }
 
-        // 3. Fade Out Text Alpha
         float newAlpha = Mathf.Lerp(startTextColor.a, 0f, normalizedTime);
         textComponent.color = new Color(startTextColor.r, startTextColor.g, startTextColor.b, newAlpha);
 
-        // 4. Auto-Destroy
         if (timer >= lifetime)
         {
             Destroy(gameObject);

@@ -1,3 +1,4 @@
+using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 
 public class DirtTile : MonoBehaviour
@@ -12,7 +13,7 @@ public class DirtTile : MonoBehaviour
 
     [Header("Tool Compatibility")]
     [Tooltip("Which cleaning tool is effective against this specific dirt spot?")]
-    [SerializeField] private ToolType requiredTool = ToolType.Sponge;
+    [SerializeField] public ToolType requiredTool = ToolType.Sponge;
 
     private bool isFullyCleaned = false;
 
@@ -29,7 +30,6 @@ public class DirtTile : MonoBehaviour
 
     public void CleanTile(ToolType usedTool)
     {
-        // Guard against wrong tool or already cleaned tile
         if (isFullyCleaned || usedTool != requiredTool || currentDirtiness <= 0f) return;
 
         float previousDirtiness = currentDirtiness;
@@ -39,10 +39,8 @@ public class DirtTile : MonoBehaviour
 
         float cleanedAmount = previousDirtiness - currentDirtiness;
 
-        // Send cleaned amount to DirtTracker
         DirtTracker.ReportCleaning(cleanedAmount);
 
-        // Fade out dirt opacity as it gets cleaned
         if (spriteRenderer != null)
         {
             Color color = spriteRenderer.color;
@@ -50,15 +48,18 @@ public class DirtTile : MonoBehaviour
             spriteRenderer.color = color;
         }
 
-        // Handle tile completion
         if (currentDirtiness <= 0f)
         {
             isFullyCleaned = true;
 
-            // Spawn the floating text/icon popup at the tile's location
             if (cleanPopupPrefab != null)
             {
                 Instantiate(cleanPopupPrefab, transform.position, Quaternion.identity);
+            }
+
+            if (GameManager.Instance != null)
+            {
+                GameManager.Instance.PlayCleanedSound();
             }
 
             gameObject.SetActive(false);
